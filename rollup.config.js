@@ -1,5 +1,6 @@
 import svelte from 'rollup-plugin-svelte';
 import resolve from 'rollup-plugin-node-resolve';
+import commonjs from 'rollup-plugin-commonjs';
 
 export default {
   input: 'src/main.js',
@@ -10,6 +11,11 @@ export default {
   },
   plugins: [
     svelte({ include: 'src/**/*.svelte' }),
-    resolve()
+    resolve(),
+    commonjs({
+      namedExports: {
+        'cree-sro-syllabics': ['sro2syllabics', 'syllabics2sro']
+      }
+    })
   ]
 }

@@ -10,10 +10,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "rollup": "^1.20.1",
+    "rollup-plugin-commonjs": "^10.0.2",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-svelte": "^5.1.0",
     "svelte": "^3.9.1"
+  },
+  "dependencies": {
+    "cree-sro-syllabics": "^2019.5.5"
   }
 }
