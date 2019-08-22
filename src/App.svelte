@@ -44,11 +44,11 @@
             </tbody>
           </table>
 
-          <a href="#">More</a>
+          <a href="more">More</a>
         </section>
 
         <section>
-          <p><a href="#">View similar words</a></p>
+          <p><a href="similar-to">View similar words</a></p>
         </section>
       </dd>
     </dl>
