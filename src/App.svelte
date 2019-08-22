@@ -33,7 +33,7 @@
               <tr> <td>You</td> <td><Cree text="kititwân" /></td> </tr>
               <tr> <td>S/he</td> <td><Cree text="itwêw" /></td> </tr>
               <tr> <td>We</td> <td><Cree text="nititwânân" /></td> </tr>
-              <tr> <td rowspan="2">You and We</td> <td> <span><Cree text="kititwânaw" /></span> or</td> </tr>
+              <tr> <td rowspan="2">You and We</td> <td><Cree text="kititwânaw" /> or</td> </tr>
               <tr>                                 <td><Cree text="kititwânânaw" /></td> </tr>
               <tr> <td>You (all)</td> <td><Cree text="kititwânânâw" /></td> </tr>
 
