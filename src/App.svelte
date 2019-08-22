@@ -1,5 +1,9 @@
+<script>
+  import Cree from './Cree.svelte';
+</script>
+
 <header>
-  <h1 lang="cr">itwêwina</h1>
+  <h1><Cree text="itwêwina" /></h1>
   <h2>Plains Cree Dictionary</h2>
 </header>
 
@@ -12,7 +16,7 @@
 <main>
   <article>
     <dl>
-      <dt><dfn lang="cr">itwêw</dfn> (Noun)</dt>
+      <dt><dfn><Cree text="itwêw" /></dfn> (Noun)</dt>
       <dd>
         <ol>
           <li>He says <cite>MD</cite></li>
@@ -25,22 +29,22 @@
             <tbody>
               <tr> <th colspan="2"> <b>Basic forms</b> (ni-/ki- word) </th> </tr>
 
-              <tr> <td>I</td> <td lang="cr">nititwân</td> </tr>
-              <tr> <td>You</td> <td lang="cr">kititwân</td> </tr>
-              <tr> <td>S/he</td> <td lang="cr">itwêw</td> </tr>
-              <tr> <td>We</td> <td lang="cr">nititwânân</td> </tr>
-              <tr> <td rowspan="2">You and We</td> <td> <span lang="cr">kititwânaw</span> or</td> </tr>
-              <tr>                                 <td lang="cr">kititwânânaw</td> </tr>
-              <tr> <td>You (all)</td> <td lang="cr">kititwânânâw</td> </tr>
+              <tr> <td>I</td> <td><Cree text="nititwân" /></td> </tr>
+              <tr> <td>You</td> <td><Cree text="kititwân" /></td> </tr>
+              <tr> <td>S/he</td> <td><Cree text="itwêw" /></td> </tr>
+              <tr> <td>We</td> <td><Cree text="nititwânân" /></td> </tr>
+              <tr> <td rowspan="2">You and We</td> <td> <span><Cree text="kititwânaw" /></span> or</td> </tr>
+              <tr>                                 <td><Cree text="kititwânânaw" /></td> </tr>
+              <tr> <td>You (all)</td> <td><Cree text="kititwânânâw" /></td> </tr>
 
               <tr> <th colspan="2"> <b>Basic forms</b> (ê-/kâ- word) </th> </tr>
 
-              <tr> <td>I</td> <td lang="cr">ê-itwêyân</td> </tr>
-              <tr> <td>You</td> <td lang="cr">ê-itwêyan</td> </tr>
-              <tr> <td>S/he</td> <td lang="cr">ê-itwêt</td> </tr>
-              <tr> <td>We</td> <td lang="cr">ê-itwêyâhk</td> </tr>
-              <tr> <td>You and We</td> <td><span lang="cr">ê-itwêyahk</span></td> </tr>
-              <tr> <td>You (all)</td> <td lang="cr">ê-itwêyêk</td> </tr>
+              <tr> <td>I</td> <td><Cree text="ê-itwêyân" /></td> </tr>
+              <tr> <td>You</td> <td><Cree text="ê-itwêyan" /></td> </tr>
+              <tr> <td>S/he</td> <td><Cree text="ê-itwêt" /></td> </tr>
+              <tr> <td>We</td> <td><Cree text="ê-itwêyâhk" /></td> </tr>
+              <tr> <td>You and We</td> <td><span><Cree text="ê-itwêyahk" /></span></td> </tr>
+              <tr> <td>You (all)</td> <td><Cree text="ê-itwêyêk" /></td> </tr>
             </tbody>
           </table>
 
