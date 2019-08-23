@@ -1,6 +1,7 @@
 <script>
   import Cree from './components/Cree.svelte';
   import OrthographySelector from './components/OrthographySelector.svelte';
+  import CiteDict from './components/CiteDict.svelte';
 </script>
 
 <header>
@@ -20,8 +21,8 @@
       <dt><dfn><Cree sro="itwêw" /></dfn> (Noun)</dt>
       <dd>
         <ol>
-          <li>He says <cite class="cite-dict">MD</cite></li>
-          <li>s/he says so, s/he says thus, s/he calls (it) so; it has such a meaning. <cite class="cite-dict">CW</cite></li>
+          <li>He says <CiteDict source="MD"/></li>
+          <li>s/he says so, s/he says thus, s/he calls (it) so; it has such a meaning. <CiteDict source="CW"/></li>
         </ol>
 
         <section>
