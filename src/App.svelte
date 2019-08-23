@@ -1,5 +1,11 @@
 <script>
   import Cree from './components/Cree.svelte';
+  import {orthography, SRO_CIRCUMFLEX, SRO_MACRON, SYLLABICS} from './components/Cree/store';
+
+  /* Orthography selector */
+  let choice = SRO_CIRCUMFLEX;
+
+  $: orthography.set(choice);
 </script>
 
 <header>
@@ -8,9 +14,13 @@
 </header>
 
 <nav>
-  <form action="search" method="GET">
-    <input type="search" placeholder="Search...">
-  </form>
+  <fieldset>
+    <legend>Writing system</legend>
+
+    <label><input type=radio bind:group={choice} value={SRO_CIRCUMFLEX}> SRO (êîôâ)</label>
+    <label><input type=radio bind:group={choice} value={SRO_MACRON}> SRO (ēīōā)</label>
+    <label><input type=radio bind:group={choice} value={SYLLABICS}> Syllabics</label>
+  </fieldset>
 </nav>
 
 <main>
