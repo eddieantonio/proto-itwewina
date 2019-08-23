@@ -20,10 +20,19 @@
     <dl>
       <dt><dfn><Cree sro="itwêw" /></dfn> (Noun)</dt>
       <dd>
-        <ol>
-          <li>He says <CiteDict source="MD"/></li>
-          <li>s/he says so, s/he says thus, s/he calls (it) so; it has such a meaning. <CiteDict source="CW"/></li>
-        </ol>
+        <section>
+          <audio controls preload="none">
+             <source src="https://sapir.artsrn.ualberta.ca/validation/recording/29444265281262d0d7e40e05b52c1c84cfda609bed83e6fa7cc07952045a2f61.m4a">
+          </audio>
+            “<Cree sro="minôs" />” (Harley Simon, Maskwacis)
+        </section>
+
+        <section>
+          <ol>
+            <li>He says <CiteDict source="MD"/></li>
+            <li>s/he says so, s/he says thus, s/he calls (it) so; it has such a meaning. <CiteDict source="CW"/></li>
+          </ol>
+        </section>
 
         <section>
           <table>
