@@ -1,8 +1,10 @@
 <script>
+  import {onDestroy} from 'svelte';
+
   import {sro2syllabics} from 'cree-sro-syllabics';
   import {orthography} from './Cree/store';
 
-  export let text;
+  export let sro;
 
   let transliterate = sro2syllabics;
   const unsubscribe = orthography.subscribe(bcp47 => {
@@ -16,8 +18,9 @@
       throw new Error(`Unknown format: ${bcp47}`);
     }
   });
+  onDestroy(unsubscribe);
 
-  $: transliterated = transliterate(text);
+  $: transliterated = transliterate(sro);
 
   function identity(t) {
     return t;
