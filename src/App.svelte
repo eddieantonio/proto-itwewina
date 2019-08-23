@@ -1,6 +1,7 @@
 <script>
   import Cree from './components/Cree.svelte';
-  import {orthography, SRO_CIRCUMFLEX, SRO_MACRON, SYLLABICS} from './components/Cree/store';
+  import {SRO_MACRON, SRO_CIRCUMFLEX, SYLLABICS} from './components/Cree';
+  import {orthography} from './components/Cree/store';
 
   /* Orthography selector */
   let choice = SRO_CIRCUMFLEX;
