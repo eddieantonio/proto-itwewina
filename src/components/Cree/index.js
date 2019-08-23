@@ -1,3 +1,7 @@
+/**
+ * Cree orthography utilities.
+ */
+
 "use strict";
 
 import {sro2syllabics} from 'cree-sro-syllabics';
@@ -11,23 +15,20 @@ export const SYLLABICS = 'Cans';
  * orthography.
  */
 export function chooseTransliterator(bcp47) {
-    if (bcp47 === SYLLABICS) {
-      return sro2syllabics;
-    } else if (bcp47 === SRO_CIRCUMFLEX) {
-      return identity;
-    } else if (bcp47 === SRO_MACRON) {
-      return toMacrons;
-    } else {
-      throw new Error(`Unknown format: ${bcp47}`);
-    }
+  if (!(bcp47 in BCP47_TO_TRANSLITERATOR)) {
+    throw new Error(`Unknown format: ${bcp47}`);
+  }
+  return BCP47_TO_TRANSLITERATOR[bcp47];
 }
 
-function identity(t) {
-  return t;
-}
-
-function toMacrons(t) {
-  return t.replace(/[êîôâ]/g, function (vowel) {
-    return {ê: 'ē', î: 'ī', ô: 'ō', â: 'ā'}[vowel];
-  });
+const BCP47_TO_TRANSLITERATOR = {
+  [SYLLABICS]: sro2syllabics,
+  [SRO_CIRCUMFLEX]: function identity(text) {
+    return text;
+  },
+  [SRO_MACRON]: function toMacrons(text) {
+    return text.replace(/[êîôâ]/g, function (vowel) {
+      return {ê: 'ē', î: 'ī', ô: 'ō', â: 'ā'}[vowel];
+    });
+  }
 }

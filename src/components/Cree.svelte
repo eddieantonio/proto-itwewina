@@ -1,3 +1,11 @@
+<!--
+
+Use this component to display Cree text, in the currently selected
+orthography.
+
+The orthography can be changed by updating the `orthography` store.
+
+-->
 <script>
   import {onDestroy} from 'svelte';
 
