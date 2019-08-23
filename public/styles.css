@@ -9,14 +9,84 @@
  * http://getbem.com/naming/
  */
 
+* {
+  box-sizing: border-box;
+}
+
+/**
+ * Use this template to make your own BEM rule:
+ */
+.block, .block__element, .block--modifier {
+  /* Positioning */
+  /* Display & Box Model */
+  /* Color */
+  /* Text */
+  /* Other */
+}
+
+
+/********************************* HEADINGS *********************************/
+
+.application-header {
+  /* Display & Box Model */
+  width: 100vw;
+  padding: 0 1rem;
+  margin: 0 0 .75rem;
+}
+
+.application-header__heading {
+  /* Display & Box Model */
+  margin: 0 auto;
+}
+
+.application-header__heading {
+  /* Display & Box Model */
+  margin: 0 auto;
+}
+
+/**
+ * BLOCK  application-title
+ *
+ * The main title of the application.
+ */
+.application-title {
+  /* Color */
+  color: #3e4f72;
+
+  /* Display & Box Model */
+  margin: 0 auto;
+
+  /* Text */
+  font: normal 500 48px/normal sans-serif;
+  text-shadow: 0 2px 4px rgba(38, 34, 50, 0.17);
+  letter-spacing: .25em;
+}
+
+/**
+ * BLOCK application-subtitle
+ *
+ * The subtitle of the application.
+ */
+.application-subtitle {
+  /* Color */
+  color: #5c73a3;
+  /* Text */
+  font: normal 300 24px/normal OpenSans, sans-serif;
+}
+
+/****************************** INLINE MARKUP ******************************/
+
 /**
  * BLOCK cite-dict
  *
  * A block that cites a dictionary source.
  */
 .cite-dict {
-  font: normal normal 900 11px/normal sans-serif;
+  /* Color */
   color: #1a2635;
+  /* Text */
+  font: normal normal 900 11px/normal sans-serif;
+  /* Other */
 }
 
 /**

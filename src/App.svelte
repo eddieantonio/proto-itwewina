@@ -4,14 +4,14 @@
   import CiteDict from './components/CiteDict.svelte';
 </script>
 
-<header>
-  <h1><Cree sro="itwêwina" /></h1>
-  <h2>Plains Cree Dictionary</h2>
+<header class="application-header">
+  <h1 class="application-header__heading application-title"><Cree sro="itwêwina" /></h1>
+  <h2 class="application-header__heading application-subtitle">Plains Cree Dictionary</h2>
 </header>
 
 <nav>
   <form action="search" method="GET">
-    <input type="search" placeholder="Search...">
+    <input type="search" placeholder="Search for a word in Cree or English">
   </form>
 </nav>
 
@@ -20,7 +20,7 @@
     <dl>
       <dt><dfn><Cree sro="itwêw" /></dfn> (Noun)</dt>
       <dd>
-        <section>
+        <section class="recordings">
           <button class="play-audio-button">▶️</button>
           <audio preload="none">
              <source src="https://sapir.artsrn.ualberta.ca/validation/recording/29444265281262d0d7e40e05b52c1c84cfda609bed83e6fa7cc07952045a2f61.m4a">
@@ -28,14 +28,14 @@
             “<Cree sro="minôs" />” (Harley Simon, Maskwacis)
         </section>
 
-        <section>
+        <section class="translations">
           <ol>
             <li>He says <CiteDict source="MD"/></li>
             <li>s/he says so, s/he says thus, s/he calls (it) so; it has such a meaning. <CiteDict source="CW"/></li>
           </ol>
         </section>
 
-        <section>
+        <section class="paradigm">
           <table>
             <tbody>
               <tr> <th colspan="2"> <b>Basic forms</b> (ni-/ki- word) </th> </tr>
