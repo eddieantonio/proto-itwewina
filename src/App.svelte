@@ -21,7 +21,8 @@
       <dt><dfn><Cree sro="itwêw" /></dfn> (Noun)</dt>
       <dd>
         <section>
-          <audio controls preload="none">
+          <button class="play-audio-button">▶️</button>
+          <audio preload="none">
              <source src="https://sapir.artsrn.ualberta.ca/validation/recording/29444265281262d0d7e40e05b52c1c84cfda609bed83e6fa7cc07952045a2f61.m4a">
           </audio>
             “<Cree sro="minôs" />” (Harley Simon, Maskwacis)
@@ -78,10 +79,3 @@
   <a href="https://altlab.ualberta.ca/"><img src="uofa-logo.png" alt="University of Alberta"></a>
   <a href="http://fnuniv.ca/"><img src="uofa-logo.png" alt="FNU"></a>
 </footer>
-
-
-<style>
-td[rowspan] {
-  vertical-align: top;
-}
-</style>

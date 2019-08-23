@@ -18,3 +18,11 @@
   font: normal normal 900 11px/normal sans-serif;
   color: #1a2635;
 }
+
+/**
+ * Non-BEM styles.
+ */
+
+td[rowspan] {
+  vertical-align: top;
+}
