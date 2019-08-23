@@ -9,7 +9,9 @@
 </header>
 
 <nav>
-  <OrthographySelector/>
+  <form action="search" method="GET">
+    <input type="search" placeholder="Search...">
+  </form>
 </nav>
 
 <main>
@@ -55,6 +57,10 @@
       </dd>
     </dl>
   </article>
+
+  <aside>
+    <OrthographySelector/>
+  </aside>
 </main>
 
 <footer>
