@@ -5,14 +5,10 @@
   import {orthography} from './Cree/store';
 
   export let sro;
-
   let transliterate;
-  const unsubscribe = orthography.subscribe(bcp47 => {
-    transliterate = chooseTransliterator(bcp47);
-  });
-  onDestroy(unsubscribe);
 
-  $: transliterated = transliterate(sro);
+  $: transliterate = chooseTransliterator($orthography); 
+  $: text = transliterate(sro);
 </script>
 
-<span lang="cr">{transliterated}</span>
+<span lang="cr">{text}</span>
