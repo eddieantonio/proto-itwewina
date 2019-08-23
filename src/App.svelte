@@ -1,5 +1,5 @@
 <script>
-  import Cree from './Cree.svelte';
+  import Cree from './components/Cree.svelte';
 </script>
 
 <header>
@@ -20,8 +20,7 @@
       <dd>
         <ol>
           <li>He says <cite>MD</cite></li>
-          <li>s/he says so, s/he says thus, s/he calls (it) so; it has such a
-          meaning. <cite>CW</cite></li>
+          <li>s/he says so, s/he says thus, s/he calls (it) so; it has such a meaning. <cite>CW</cite></li>
         </ol>
 
         <section>
