@@ -1,12 +1,6 @@
 <script>
   import Cree from './components/Cree.svelte';
-  import {SRO_MACRON, SRO_CIRCUMFLEX, SYLLABICS} from './components/Cree';
-  import {orthography} from './components/Cree/store';
-
-  /* Orthography selector */
-  let choice = SRO_CIRCUMFLEX;
-
-  $: orthography.set(choice);
+  import OrthographySelector from './components/OrthographySelector.svelte';
 </script>
 
 <header>
@@ -15,13 +9,7 @@
 </header>
 
 <nav>
-  <fieldset>
-    <legend>Writing system</legend>
-
-    <label><input type=radio bind:group={choice} value={SRO_CIRCUMFLEX}> SRO (êîôâ)</label>
-    <label><input type=radio bind:group={choice} value={SRO_MACRON}> SRO (ēīōā)</label>
-    <label><input type=radio bind:group={choice} value={SYLLABICS}> Syllabics</label>
-  </fieldset>
+  <OrthographySelector/>
 </nav>
 
 <main>
