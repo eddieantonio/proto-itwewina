@@ -14,7 +14,7 @@
   </form>
 </nav>
 
-<main>
+<main class="application__content">
   <article>
     <header>
       <h1><dfn><Cree sro="itwêw" /></dfn> <span class="part-of-speech">(Noun)</span></h1>
@@ -41,8 +41,8 @@
   </article>
 </main>
 
-<footer>
-  <a href="https://www.maskwacised.ca/"><img src="mesc-logo.png" alt="MESC"></a>
-  <a href="https://altlab.ualberta.ca/"><img src="uofa-logo.png" alt="University of Alberta"></a>
-  <a href="http://fnuniv.ca/"><img src="uofa-logo.png" alt="FNU"></a>
+<footer class="application-footer">
+  <a class="application-footer__logo" href="https://www.maskwacised.ca/"><img src="img/mesc-logo.svg" alt="MESC"></a>
+  <a class="application-footer__logo" href="https://altlab.ualberta.ca/"><img src="img/uofa-logo.svg" alt="University of Alberta"></a>
+  <a class="application-footer__logo" href="http://fnuniv.ca/"><img src="img/fnu-logo.png" alt="FNU"></a>
 </footer>
