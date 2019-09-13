@@ -51,15 +51,14 @@
  */
 .application-title {
   /* Color */
-  color: #3e4f72;
+  color: #0091ff;
 
   /* Display & Box Model */
   margin: 0 auto;
 
   /* Text */
-  font: normal 500 48px/normal sans-serif;
-  text-shadow: 0 2px 4px rgba(38, 34, 50, 0.17);
-  letter-spacing: .25em;
+  font: normal 500 24px/normal "Trebuchet MS", sans-serif;
+  letter-spacing: 3px;
 }
 
 /**
@@ -69,9 +68,9 @@
  */
 .application-subtitle {
   /* Color */
-  color: #5c73a3;
+  color: #000;
   /* Text */
-  font: normal 300 24px/normal OpenSans, sans-serif;
+  font: normal 300 12px/normal OpenSans, sans-serif;
 }
 
 /****************************** INLINE MARKUP ******************************/
