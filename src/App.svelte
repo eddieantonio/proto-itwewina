@@ -30,9 +30,9 @@
         <tbody>
           <tr> <th colspan="2"> <b>Basic forms</b> (ni-/ki- word) </th> </tr>
 
-          <tr> <td>One</td>                       <td><Cree sro="nititwân" /></td> </tr>
-          <tr> <td>Many</td>                     <td><Cree sro="kititwân" /></td> </tr>
-          <tr> <td>Further</td>                    <td><Cree sro="itwêw" /></td> </tr>
+          <tr> <td>One</td>       <td><Cree sro="niska" /></td> </tr>
+          <tr> <td>Many</td>      <td><Cree sro="niskak" /></td> </tr>
+          <tr> <td>Further</td>   <td><Cree sro="niska" /></td> </tr>
         </tbody>
       </table>
 
