@@ -32,11 +32,8 @@
   width: 100vw;
   padding: 0 1rem;
   margin: 0 0 .75rem;
-}
-
-.application-header__heading {
-  /* Display & Box Model */
-  margin: 0 auto;
+  background: transparent;  /* Fallback */
+  background: linear-gradient(to right, #115fe8 0%, #115fe8 10px, rgba(0,0,0,0) 10px, rgba(0,0,0,0) 100%);
 }
 
 .application-header__heading {
@@ -52,9 +49,6 @@
 .application-title {
   /* Color */
   color: #0091ff;
-
-  /* Display & Box Model */
-  margin: 0 auto;
 
   /* Text */
   font: normal 500 24px/normal "Trebuchet MS", sans-serif;
