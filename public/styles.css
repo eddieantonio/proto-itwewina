@@ -15,9 +15,14 @@
   --header-stripe-width:  8px;  /* Width of the "stripe" to the left of the title. */
 
   /* Colors */
-  --application-bg-color:   #F7F7F7; /* Background color of the entire application. */
-  --footer-bg-color:        #EBE9E9; /* Background color of the "sunken" footer. */
-  --header-stripe-color:    #115fe8; /* Color of the "stripe" to the left of the title. */
+  --application-bg-color:       #F7F7F7; /* Background color of the entire application. */
+  --application-title-color:    #0091FF; /* Color of the "itwêwina" title. */
+  --application-subtitle-color: #000000; /* Color of "Plains Cree Dictionary" */
+  --cite-text-color:            #1A2635; /* Color of dictionary citation element. */
+
+  --footer-bg-color:            #EBE9E9; /* Background color of the "sunken" footer. */
+  /* TODO: should this be the same as the title color? */
+  --header-stripe-color:        #115FE8; /* Color of the "stripe" to the left of the title. */
 }
 
 * {
@@ -87,10 +92,10 @@
  */
 .application-title {
   /* Color */
-  color: #0091ff;
+  color: var(--application-title-color);
 
   /* Text */
-  font: normal 500 24px/normal "Trebuchet MS", sans-serif;
+  font: 24px/normal "Trebuchet MS", sans-serif;
   letter-spacing: 3px;
 }
 
@@ -101,8 +106,7 @@
  */
 .application-subtitle {
   /* Color */
-  color: #000;
-  /* Text */
+  color: var(--application-subtitle-color);
   font: normal 300 12px/normal OpenSans, sans-serif;
 }
 
@@ -117,7 +121,6 @@
   /* Display & Box Model */
   display: flex;
   width: 100vw;
-  padding: 7px -.5em;
   /* Color */
   background-color: var(--footer-bg-color);
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.1);
@@ -135,11 +138,9 @@
   /* Positioning */
   flex: 1;
   /* Display & Box Model */
-  padding: 0 .5em;
-  /* Color */
+  margin: 4px .5rem;
   /* Text */
   text-align: center;
-  /* Other */
 }
 
 .application-footer__logo > img {
@@ -156,10 +157,9 @@
  */
 .cite-dict {
   /* Color */
-  color: #1a2635;
+  color: var(--cite-text-color);
   /* Text */
   font: normal normal 900 11px/normal sans-serif;
-  /* Other */
 }
 
 /**
