@@ -17,7 +17,7 @@
   /* Colors */
   --app-bg-color:           #F7F7F7; /* Background color of the entire application. */
   --app-title-color:        #0091FF; /* Color of the "itwêwina" title. */
-  --app-subtitle-color:     #000000; /* Color of "Plains Cree Dictionary" */
+  --app-body-color:         #000000; /* Color of "Plains Cree Dictionary" */
   --cite-text-color:        #1A2635; /* Color of dictionary citation element. */
   --footer-bg-color:        #EBE9E9; /* Background color of the "sunken" footer. */
   /* TODO: should this be the same as the title color? */
@@ -56,9 +56,10 @@
   flex-direction: column;
 
   /* Color */
-  color: var(--app-subtitle-color);
+  color: var(--app-body-color);
   background: var(--app-bg-color);
 
+  /* Text */
   font: normal normal 16px/normal var(--body-font-family);
 }
 
