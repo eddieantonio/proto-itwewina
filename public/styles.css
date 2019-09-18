@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import "normalize.css";
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:500&display=swap&subset=latin-ext'); */
 
 /**
  * Preliminary styles for the application.
@@ -19,10 +20,12 @@
   --application-title-color:    #0091FF; /* Color of the "itwêwina" title. */
   --application-subtitle-color: #000000; /* Color of "Plains Cree Dictionary" */
   --cite-text-color:            #1A2635; /* Color of dictionary citation element. */
-
   --footer-bg-color:            #EBE9E9; /* Background color of the "sunken" footer. */
   /* TODO: should this be the same as the title color? */
   --header-stripe-color:        #115FE8; /* Color of the "stripe" to the left of the title. */
+
+  --heading-font-family: Raleway, Euphemia UCAS sans-serif;
+  --body-font-family: Open Sans, Euphemia UCAS, sans-serif;
 }
 
 * {
@@ -54,7 +57,10 @@
   flex-direction: column;
 
   /* Color */
+  color: var(--application-subtitle-color);
   background: var(--application-bg-color);
+
+  font: normal normal 16px/normal var(--body-font-family);
 }
 
 .application__content {
@@ -95,7 +101,7 @@
   color: var(--application-title-color);
 
   /* Text */
-  font: 24px/normal "Trebuchet MS", sans-serif;
+  font: 500 24px/normal var(--heading-font-family);
   letter-spacing: 3px;
 }
 
@@ -105,9 +111,9 @@
  * The subtitle of the application.
  */
 .application-subtitle {
-  /* Color */
-  color: var(--application-subtitle-color);
-  font: normal 300 12px/normal OpenSans, sans-serif;
+  /* Text */
+  font-weight: 300;
+  font-size: 12px;
 }
 
 /**************************** APPLICATION FOOTER ****************************/
