@@ -9,6 +9,17 @@
  * http://getbem.com/naming/
  */
 
+:root {
+  /* Positioning */
+  --page-gutter:         1rem;  /* Space on either side of the viewport. */
+  --header-stripe-width:  8px;  /* Width of the "stripe" to the left of the title. */
+
+  /* Colors */
+  --application-bg-color:   #F7F7F7; /* Background color of the entire application. */
+  --footer-bg-color:        #EBE9E9; /* Background color of the "sunken" footer. */
+  --header-stripe-color:    #115fe8; /* Color of the "stripe" to the left of the title. */
+}
+
 * {
   box-sizing: border-box;
 }
@@ -36,10 +47,18 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+
+  /* Color */
+  background: var(--application-bg-color);
 }
 
 .application__content {
   flex: 1;
+}
+
+.application__panel {
+  padding-left: var(--page-gutter);
+  padding-right: var(--page-gutter);
 }
 
 /********************************* HEADINGS *********************************/
@@ -47,10 +66,13 @@
 .application-header {
   /* Display & Box Model */
   width: 100vw;
-  padding: 0 1rem;
+  padding: 0 var(--page-gutter);
   margin: 0 0 .75rem;
   background: transparent;  /* Fallback */
-  background: linear-gradient(to right, #115fe8 0%, #115fe8 10px, rgba(0,0,0,0) 10px, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to right, var(--header-stripe-color) 0%,
+                                        var(--header-stripe-color) var(--header-stripe-width),
+                                        rgba(0,0,0,0) var(--header-stripe-width),
+                                        rgba(0,0,0,0) 100%);
 }
 
 .application-header__heading {
@@ -97,7 +119,7 @@
   width: 100vw;
   padding: 7px -.5em;
   /* Color */
-  background-color: #ebe9e9;
+  background-color: var(--footer-bg-color);
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.1);
   /* Other */
   flex-wrap: wrap;

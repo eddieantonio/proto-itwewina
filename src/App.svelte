@@ -8,13 +8,13 @@
   <h2 class="application-header__heading application-subtitle">Plains Cree Dictionary</h2>
 </header>
 
-<nav>
+<nav class="application__panel">
   <form action="search" method="GET">
     <input type="search" placeholder="Search for a word in Cree or English">
   </form>
 </nav>
 
-<main class="application__content">
+<main class="application__content application__panel">
   <article>
     <header>
       <h1><dfn><Cree sro="itwêw" /></dfn> <span class="part-of-speech">(Noun)</span></h1>
