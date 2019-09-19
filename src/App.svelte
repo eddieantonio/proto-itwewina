@@ -8,9 +8,12 @@
   <h2 class="application-header__heading application-subtitle">Plains Cree Dictionary</h2>
 </header>
 
-<nav class="application__panel">
-  <form action="search" method="GET">
-    <input type="search" placeholder="Search for a word in Cree or English">
+<nav class="search application__panel">
+  <form class="search__search-bar search-bar" action="search" method="GET">
+    <label class="search-bar__label" for="search">Search</label>
+    <!-- Should autofocus on homepage only! -->
+    <input id="search" class="search-bar__input" type="search" name="q" autofocus placeholder="Search for a word in Cree or English">
+    <button class="search-bar__button" type="submit">Search</button>
   </form>
 </nav>
 

@@ -22,6 +22,8 @@
   --footer-bg-color:        #EBE9E9; /* Background color of the "sunken" footer. */
   /* TODO: should this be the same as the title color? */
   --header-stripe-color:    #115FE8; /* Color of the "stripe" to the left of the title. */
+  --search-border-color:    #979797;
+  --search-focus-color:     #1C9DFE; /* Color of the search bar when focused */
 
   --heading-font-family: Raleway, Euphemia UCAS sans-serif;
   --body-font-family: Open Sans, Euphemia UCAS, sans-serif;
@@ -153,6 +155,95 @@
   max-width: 33vw;
   max-height: 8em;
 }
+
+/********************************** SEARCH **********************************/
+
+/**
+ * BLOCK search
+ *
+ * The main search panel.
+ */
+.search {
+  /* Positioning */
+  /* Display & Box Model */
+  display: flex;
+  /* Color */
+  /* Text */
+  /* Other */
+}
+
+/**
+ * ELEMENT advanced search.
+ */
+.search__advanced  {
+  /* Positioning */
+  /* Display & Box Model */
+  /* Color */
+  /* Text */
+  /* Other */
+}
+
+.search__search-bar {
+  /* Positioning */
+  /* Display & Box Model */
+  /* Color */
+  /* Text */
+  /* Other */
+}
+
+/**
+ * BLOCK search bar
+ */
+.search-bar {
+  /* Positioning */
+  /* Display & Box Model */
+  display: flex;
+  width: 100%;
+  /* Color */
+  /* Text */
+  font-size: 24px;
+  /* Other */
+}
+
+/**
+ * ELEMENT search label
+ *
+ * The label that says "Search: "
+ */
+@media screen {
+  .search-bar__label, .search-bar__button {
+    display: none;
+  }
+}
+
+/**
+ * ELEMENT search input
+ */
+.search-bar__input {
+  /* Positioning */
+  /* Display & Box Model */
+  flex: 1;
+  padding: 4px 1rem;
+  border: solid 1px var(--search-border-color);
+  /* Color */
+  /* Other */
+  border-radius: 15px;
+  /* Has a nice animation when the search bar receives focus. */
+  box-shadow: 0 0 0 transparent;
+  transition: box-shadow .125s;
+}
+
+/* Inspiration: https://codepen.io/himalayasingh/pen/dqjLgO */
+
+.search-bar__input:focus {
+  /* Positioning */
+  /* Display & Box Model */
+  /* Color */
+  /* Other */
+  box-shadow: 0 0 0 1px white,
+              0 0 0 4px var(--search-focus-color);
+}
+
 
 /****************************** INLINE MARKUP ******************************/
 
