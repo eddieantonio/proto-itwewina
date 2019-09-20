@@ -88,6 +88,12 @@
                                         rgba(0,0,0,0) 100%);
 }
 
+/* A link directly within the header is treated normally. */
+.application-header > a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
 .application-header__heading {
   /* Display & Box Model */
   margin: 0 auto;
