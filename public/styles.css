@@ -196,6 +196,7 @@
  */
 .search-bar {
   /* Positioning */
+  position: relative;
   /* Display & Box Model */
   display: flex;
   width: 100%;
@@ -211,7 +212,7 @@
  * The label that says "Search: "
  */
 @media screen {
-  .search-bar__label, .search-bar__button {
+  .search-bar__label {
     display: none;
   }
 }
@@ -236,12 +237,25 @@
 /* Inspiration: https://codepen.io/himalayasingh/pen/dqjLgO */
 
 .search-bar__input:focus {
-  /* Positioning */
-  /* Display & Box Model */
-  /* Color */
-  /* Other */
   box-shadow: 0 0 0 1px white,
               0 0 0 4px var(--search-focus-color);
+}
+
+.search-bar:invalid .search-bar__button {
+  opacity: 50%;
+  cursor: not-allowed;
+}
+
+.search-bar__button {
+  position: absolute;
+  right: 0;
+
+  height: 100%;
+  border: 0;
+
+  background: transparent;
+
+  cursor: pointer;
 }
 
 
