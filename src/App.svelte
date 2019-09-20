@@ -46,13 +46,13 @@
       TODO
     </section>
 
-    <section class="translations">
-      <ol>
-        <li>cat <CiteDict source="CW"/> <CiteDict source="MD"/></li>
+    <section class="definition__meanings">
+      <ol class="meanings">
+        <li class="meanings__meaning">cat <CiteDict source="CW"/> <CiteDict source="MD"/></li>
       </ol>
     </section>
 
-    <section class="paradigm">
+    <section class="definition__paradigm paradigm">
       <table>
         <tbody>
           <tr> <th colspan="2"> <b>Basic forms</b> (ni-/ki- word) </th> </tr>

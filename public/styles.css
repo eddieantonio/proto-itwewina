@@ -65,7 +65,7 @@
   background: var(--app-bg-color);
 
   /* Text */
-  font: normal normal 16px/normal var(--body-font-family);
+  font: normal 300 16px/normal var(--body-font-family);
 }
 
 .application__content {
@@ -267,6 +267,14 @@
   font-style: normal;
   font-weight: normal;
   /* Other */
+}
+
+.meanings {
+  padding: 0;
+
+  font-size: 24px;
+
+  list-style-position: inside;
 }
 
 /**************************** APPLICATION FOOTER ****************************/
