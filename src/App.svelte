@@ -35,10 +35,17 @@
 </nav>
 
 <main class="application__content application__panel">
-  <article>
-    <header>
-      <h1><dfn><Cree sro="minôs" /></dfn> <span class="part-of-speech">(Noun)</span></h1>
+  <article class="definition">
+    <header class="definition__header">
+      <h1 class="definition-title">
+        <dfn class="definition-title__word"><Cree sro="minôs" /></dfn>
+        <span class="definition-title__pos">(Noun)</span></h1>
     </header>
+
+    <section class="definition__recordings">
+      TODO
+    </section>
+
     <section class="translations">
       <ol>
         <li>cat <CiteDict source="CW"/> <CiteDict source="MD"/></li>

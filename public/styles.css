@@ -14,6 +14,9 @@
   --page-gutter:         1rem;  /* Space on either side of the viewport. */
   --header-stripe-width:  8px;  /* Width of the "stripe" to the left of the title. */
 
+  /* Font sizes */
+  --definition-title-size: 28px;
+
   /* Colors */
   --app-bg-color:           #F7F7F7; /* Background color of the entire application. */
   --app-title-color:        #0091FF; /* Color of the "itwêwina" title. */
@@ -287,7 +290,34 @@
   height: 1.125em;
 }
 
-/****************************** INLINE MARKUP ******************************/
+/******************************** DEFINITION ********************************/
+
+.definition-title {
+  font-size: var(--definition-title-size);
+}
+
+.definition-title__word {
+  /* Positioning */
+  /* Display & Box Model */
+  /* Color */
+  /* Text */
+  font-style: normal;
+  font-weight: bold;
+  /* Other */
+}
+
+.definition-title__pos {
+  /* Positioning */
+  /* Display & Box Model */
+  /* Color */
+  /* Text */
+  font-style: normal;
+  font-weight: normal;
+  /* Other */
+}
+
+
+/******************************* INLINE MARKUP ******************************/
 
 /**
  * BLOCK cite-dict
