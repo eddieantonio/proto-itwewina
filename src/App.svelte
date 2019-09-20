@@ -24,7 +24,7 @@
            autofocus
            placeholder="Search in Cree or English">
     <button class="search-bar__button" type="submit">
-      🔍
+      🔍 <!-- TODO: replace with font awesome images. -->
     </button>
   </form>
 </nav>
@@ -32,11 +32,11 @@
 <main class="application__content application__panel">
   <article>
     <header>
-      <h1><dfn><Cree sro="itwêw" /></dfn> <span class="part-of-speech">(Noun)</span></h1>
+      <h1><dfn><Cree sro="minôs" /></dfn> <span class="part-of-speech">(Noun)</span></h1>
     </header>
     <section class="translations">
       <ol>
-        <li>goose <CiteDict source="CW"/> <CiteDict source="MD"/></li>
+        <li>cat <CiteDict source="CW"/> <CiteDict source="MD"/></li>
       </ol>
     </section>
 
@@ -45,9 +45,9 @@
         <tbody>
           <tr> <th colspan="2"> <b>Basic forms</b> (ni-/ki- word) </th> </tr>
 
-          <tr> <td>One</td>       <td><Cree sro="niska" /></td> </tr>
-          <tr> <td>Many</td>      <td><Cree sro="niskak" /></td> </tr>
-          <tr> <td>Further</td>   <td><Cree sro="niska" /></td> </tr>
+          <tr> <td>One</td>       <td><Cree sro="minôs" /></td> </tr>
+          <tr> <td>Many</td>      <td><Cree sro="minôsak" /></td> </tr>
+          <tr> <td>Further</td>   <td><Cree sro="minôsa" /></td> </tr>
         </tbody>
       </table>
 
