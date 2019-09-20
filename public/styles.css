@@ -133,22 +133,39 @@
  */
 .application-footer {
   /* Display & Box Model */
-  display: flex;
   width: 100vw;
   /* Color */
   background-color: var(--footer-bg-color);
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.application-footer__about {
+  margin: .1rem var(--page-gutter);
+  text-align: center;
+  line-height: 1.1;
+  color: #555;
+}
+
+/**
+ * BLOCK partner-logos
+ *
+ * Contains logos, primarily in the footer.
+ */
+.partner-logos {
+  /* Display & Box Model */
+  display: flex;
+  width: 100%;
   /* Other */
   flex-wrap: wrap;
   align-items: center;
 }
 
 /**
- * ELEMENT application-footer__logo
+ * ELEMENT partner-logos__logo
  *
- * A logo inside the footer
+ * One particular logo.
  */
-.application-footer__logo {
+.partner-logos__logo {
   /* Positioning */
   flex: 1;
   /* Display & Box Model */
@@ -157,7 +174,7 @@
   text-align: center;
 }
 
-.application-footer__logo > img {
+.partner-logos__logo > img {
   max-width: 33vw;
   max-height: 8em;
 }
