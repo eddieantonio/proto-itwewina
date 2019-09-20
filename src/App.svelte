@@ -53,9 +53,9 @@
     </section>
 
     <section class="definition__paradigm paradigm">
-      <table>
+      <table class="paradigm__table">
         <tbody>
-          <tr> <th colspan="2"> <b>Basic forms</b> (ni-/ki- word) </th> </tr>
+          <tr> <th class="paradigm__panel-description" colspan="2"> Basic </th> </tr>
 
           <tr> <td>One</td>       <td><Cree sro="minôs" /></td> </tr>
           <tr> <td>Many</td>      <td><Cree sro="minôsak" /></td> </tr>
@@ -63,7 +63,7 @@
         </tbody>
       </table>
 
-      <a href="more">More</a>
+      <button class="paradigm__more-button"> more </button>
     </section>
   </article>
 </main>

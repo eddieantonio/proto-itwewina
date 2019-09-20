@@ -277,6 +277,49 @@
   list-style-position: inside;
 }
 
+.paradigm {
+  border: solid 1px #828a95;
+
+  background: #fff;
+
+  border-radius: 4px;
+}
+
+.paradigm__table {
+  margin: 0 auto 15px;
+  max-width: calc(100% - 2 * 22px); /* Have an 'inner margin' of 22px; */
+
+  line-height: 1.5;
+  border-spacing: 2em 0.5rem;
+}
+
+.paradigm__more-button {
+  display: block;
+
+  width: 100%;
+  border: 0;
+  padding-bottom: 4px;
+
+  color: #fff;
+  background-color: #283c95;
+
+  text-align: center;
+  font-weight: inherit;
+  line-height: 1.5;
+
+  border-radius: 0 0 3px 3px;
+}
+
+.paradigm__more-button::before {
+  content: "+ ";
+  font-weight: bold;
+}
+
+.paradigm__panel-description {
+  text-align: left;
+}
+
+
 /**************************** APPLICATION FOOTER ****************************/
 
 /**
@@ -287,6 +330,7 @@
 .application-footer {
   /* Display & Box Model */
   width: 100vw;
+  margin-top: 22px;
   /* Color */
   background-color: var(--footer-bg-color);
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.1);
