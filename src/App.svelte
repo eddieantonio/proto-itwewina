@@ -24,7 +24,7 @@
            autofocus
            placeholder="Search in Cree or English">
     <button class="search-bar__button" type="submit">
-      🔍 <!-- TODO: replace with font awesome images. -->
+      <img src="img/fa/search.svg">
     </button>
   </form>
 </nav>

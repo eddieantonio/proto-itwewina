@@ -273,7 +273,9 @@
   position: absolute;
   right: 0;
 
+  display: inline-block;
   height: 100%;
+  width: 2em;
   border: 0;
 
   background: transparent;
@@ -281,6 +283,10 @@
   cursor: pointer;
 }
 
+.search-bar__button > img {
+  margin-top: .125em;
+  height: 1.125em;
+}
 
 /****************************** INLINE MARKUP ******************************/
 
