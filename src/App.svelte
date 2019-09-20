@@ -26,6 +26,12 @@
       <img src="img/fa/search.svg" alt="Search">
     </button>
   </form>
+  <details class="search__advanced">
+    <summary>
+      Advanced search
+    </summary>
+    TODO: advanced search.
+  </details>
 </nav>
 
 <main class="application__content application__panel">
