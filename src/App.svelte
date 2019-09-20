@@ -21,10 +21,9 @@
      -->
     <input id="search" class="search-bar__input"
            type="text" name="q" required
-           autofocus
            placeholder="Search in Cree or English">
     <button class="search-bar__button" type="submit">
-      <img src="img/fa/search.svg">
+      <img src="img/fa/search.svg" alt="Search">
     </button>
   </form>
 </nav>
