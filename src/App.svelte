@@ -2,6 +2,11 @@
   import Cree from './components/Cree.svelte';
 
   import DefaultScreen from './screens/Default.svelte';
+  // TODO: make this work!
+  const screens = {
+    'default': DefaultScreen,
+  };
+  let screen = DefaultScreen;
 </script>
 
 <header class="application-header">
