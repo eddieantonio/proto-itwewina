@@ -77,6 +77,18 @@
   padding-right: var(--page-gutter);
 }
 
+/**
+ * A panel that stands out from its background, as it's in a box!
+ */
+.application__panel--box {
+  margin: 6px var(--page-gutter);
+  padding-bottom: 1rem;
+
+  background-color: #FFFDFD;
+
+  box-shadow: 0 1px 1px 0 rgba(129, 127, 127, 0.5);
+}
+
 /********************************* HEADINGS *********************************/
 
 .application-header {
@@ -243,6 +255,7 @@
   height: 1.125em;
 }
 
+
 /******************************** DEFINITION ********************************/
 
 .definition-title {
@@ -319,6 +332,30 @@
   text-align: left;
 }
 
+/********************************** PROSE **********************************/
+
+/**
+ * BLOCK prose
+ *
+ * A bunch of readable text.
+ */
+.prose__heading {
+  font: bold 18px var(--body-font-family);
+
+  color: #283C95;
+}
+
+/* this is anti-BEM, but like, it's body text ¯\_(ツ)_/¯ */
+.prose p {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* also anti-BEM ¯\_(ツ)_/¯ */
+.prose p [lang] {
+  font-style: italic;
+}
+
 
 /**************************** APPLICATION FOOTER ****************************/
 
@@ -375,6 +412,9 @@
   max-width: 33vw;
   max-height: 8em;
 }
+
+
+/****************************** UTILITY CLASSES *****************************/
 
 
 /******************************* INLINE MARKUP ******************************/
