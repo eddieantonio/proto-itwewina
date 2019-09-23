@@ -2,11 +2,14 @@
   import Cree from './components/Cree.svelte';
 
   import DefaultScreen from './screens/Default.svelte';
+  import HomeScreen from './screens/Home.svelte';
+
   // TODO: make this work!
   const screens = {
     'default': DefaultScreen,
+    'home': HomeScreen
   };
-  let screen = DefaultScreen;
+  let screen = screens['home'];
 </script>
 
 <header class="application-header">
@@ -16,7 +19,7 @@
   </a>
 </header>
 
-<DefaultScreen/>
+<svelte:component this={HomeScreen} />
 
 <footer class="application-footer">
   <div class="partner-logos">
