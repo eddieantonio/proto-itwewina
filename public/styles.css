@@ -170,14 +170,7 @@
   /* Display & Box Model */
   /* Color */
   /* Text */
-  /* Other */
-}
-
-.search__search-bar {
-  /* Positioning */
-  /* Display & Box Model */
-  /* Color */
-  /* Text */
+  text-align: right;
   /* Other */
 }
 
@@ -224,8 +217,9 @@
   transition: box-shadow .125s;
 }
 
-.search-bar__input:empty {
+.search-bar__input:placeholder-shown {
   font-style: italic;
+  font-weight: 300;
 }
 
 /* Inspiration: https://codepen.io/himalayasingh/pen/dqjLgO */
@@ -436,6 +430,25 @@
 
 /****************************** UTILITY CLASSES *****************************/
 
+.toggle-box__toggle {
+  /* Display & Box Model */
+  display: block;
+
+  /* Other */
+  cursor: pointer;
+}
+
+.toggle-box__toggle::after {
+  content: url("img/fa/chevron-circle-down.svg");
+  display: inline-block;
+  width: 10px;
+}
+
+.toggle-box__toggle {
+  text-decoration: underline;
+
+  color: #0f2657;
+}
 
 /******************************* INLINE MARKUP ******************************/
 
