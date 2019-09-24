@@ -1,4 +1,3 @@
-
 <script>
   import Cree from '../components/Cree.svelte';
   import CiteDict from '../components/CiteDict.svelte';
@@ -7,8 +6,8 @@
 
 <Navigation />
 
-<main class="application__content application__panel application__panel--box">
-  <article class="prose">
+<main class="application__content application__panel">
+  <article class="prose box">
     <h1 class="prose__heading"><Cree sro="tânisi!" /></h1>
 
     <p> <Cree sro="itwêwina" /> is a Plains Cree Dictionary. </p>

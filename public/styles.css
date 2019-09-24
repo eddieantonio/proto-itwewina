@@ -69,24 +69,13 @@
 }
 
 .application__content {
+  margin-top: 6px;
   flex: 1;
 }
 
 .application__panel {
   padding-left: var(--page-gutter);
   padding-right: var(--page-gutter);
-}
-
-/**
- * A panel that stands out from its background, as it's in a box!
- */
-.application__panel--box {
-  margin: 6px var(--page-gutter);
-  padding-bottom: 1rem;
-
-  background-color: #FFFDFD;
-
-  box-shadow: 0 1px 1px 0 rgba(129, 127, 127, 0.5);
 }
 
 /********************************* HEADINGS *********************************/
@@ -465,6 +454,19 @@
 .toggle-box--large > .toggle-box__toggle {
   font-size: 16px;
 }
+
+/**
+ * A panel that stands out from its background, as it's in a box!
+ */
+.box {
+  padding: 6px var(--page-gutter);
+  padding-bottom: 1rem;
+
+  background-color: #FFFDFD;
+
+  box-shadow: 0 1px 1px 0 rgba(129, 127, 127, 0.5);
+}
+
 
 /******************************* INLINE MARKUP ******************************/
 
