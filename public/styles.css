@@ -20,21 +20,29 @@
   /* Colors */
   --app-bg-color:           #F7F7F7; /* Background color of the entire application. */
   --app-title-color:        #0091FF; /* Color of the "itwêwina" title. */
-  --app-body-color:         #000000; /* Color of "Plains Cree Dictionary" */
+  --app-body-color:         #000000; /* Color of body text. */
   --cite-text-color:        #1A2635; /* Color of dictionary citation element. */
   --footer-bg-color:        #EBE9E9; /* Background color of the "sunken" footer. */
   /* TODO: should this be the same as the title color? */
   --header-stripe-color:    #115FE8; /* Color of the "stripe" to the left of the title. */
-  --search-border-color:    #979797;
+  --search-border-color:    #979797; /* Color of the search bar's (unfocused) border */
   --search-focus-color:     #1C9DFE; /* Color of the search bar when focused */
+  --box-bg-color:           #FFFDFD; /* Background color of "boxes" */
+  --footer-text-color:      #404040; /* Color of text in the footer. */
+  --paradigm-border-color:  #283C95; /* Color of the paradigm border and button. */
+  /* --paradigm-border-color:  #828A95; */ /* wat. */
+  --prose-title-color:      #283C95;
+  --link-color:             #0F2657; /* Regular links */
 
   /* Font sizes */
   --definition-title-size:     28px;
+  --prominent-font-size:       24px; /* For text that should be prominent! */
   /* Font families */
   --heading-font-family: Raleway, Euphemia UCAS sans-serif;
   --body-font-family: Open Sans, Euphemia UCAS, sans-serif;
-  
-  --paradigm-border-radius:     4px;
+
+  --search-input-border-radius: 15px;
+  --paradigm-border-radius:      4px;
 }
 
 * {
@@ -74,7 +82,7 @@
 }
 
 .application__content {
-  margin-top: 6px;
+  margin-top: var(--medium-gap);
   flex: 1;
 }
 
@@ -179,7 +187,7 @@
   width: 100%;
   /* Color */
   /* Text */
-  font-size: 24px;
+  font-size: var(--prominent-font-size);
   /* Other */
 }
 
@@ -209,7 +217,7 @@
   text-overflow: ellipsis;
 
   /* Other */
-  border-radius: 15px;
+  border-radius: var(--search-input-border-radius);
   /* Has a nice animation when the search bar receives focus. */
   box-shadow: 0 0 0 transparent;
   transition: box-shadow .125s;
@@ -281,15 +289,15 @@
 .meanings {
   padding: 0;
 
-  font-size: 24px;
+  font-size: var(--prominent-font-size);
 
   list-style-position: inside;
 }
 
 .paradigm {
-  border: solid 1px #828a95;
+  border: solid 1px var(--paradigm-border-color);
 
-  background: #fff;
+  background: var(--box-bg-color);
 
   border-radius: var(--paradigm-border-radius);
 }
@@ -309,14 +317,18 @@
   border: 0;
   padding-bottom: var(--paradigm-border-radius);
 
-  color: #fff;
-  background-color: #283c95;
+  color: #FFF;
+  background-color: var(--paradigm-border-color);
 
   text-align: center;
   font-weight: inherit;
   line-height: 1.5;
 
-  border-radius: 0 0 3px 3px;
+  /* Hack to make the rounded border look like it belongs to the parent. If we
+   * don't make the radius a bit tighter, this border protrudes in a weird
+   * way. */
+  --tighter-br: calc(var(--paradigm-border-radius) - 2px);
+  border-radius: 0 0 var(--tighter-br) var(--tighter-br);
 }
 
 .paradigm__more-button::before {
@@ -338,7 +350,7 @@
 .prose__heading {
   font: bold 18px var(--body-font-family);
 
-  color: #283C95;
+  color: var(--prose-title-color);
 }
 
 /* this is anti-BEM, but like, it's body text ¯\_(ツ)_/¯ */
@@ -386,7 +398,7 @@
 .application-footer__advanced-nav,
 .application-footer__about a:link,
 .application-footer__advanced-nav a:link {
-  color: #404040;
+  color: var(--footer-text-color);
 }
 
 .application-footer__advanced-nav a:link {
@@ -448,7 +460,7 @@
 .toggle-box__toggle {
   text-decoration: underline;
 
-  color: #0f2657;
+  color: var(--link-color);
 }
 
 /**
@@ -464,10 +476,10 @@
  * A panel that stands out from its background, as it's in a box!
  */
 .box {
-  padding: 6px var(--page-gutter);
+  padding: var(--medium-gap) var(--page-gutter);
   padding-bottom: 1rem;
 
-  background-color: #FFFDFD;
+  background-color: var(--box-bg-color);
 
   box-shadow: 0 1px 1px 0 rgba(129, 127, 127, 0.5);
 }
