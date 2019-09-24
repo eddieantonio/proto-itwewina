@@ -65,7 +65,7 @@
   background: var(--app-bg-color);
 
   /* Text */
-  font: normal 300 16px/normal var(--body-font-family);
+  font: normal 300 14px/normal var(--body-font-family);
 }
 
 .application__content {
@@ -204,13 +204,16 @@
  * ELEMENT search input
  */
 .search-bar__input {
-  /* Positioning */
   /* Display & Box Model */
   flex: 1;
   min-width: 50vw; /* The max width actually was way too big before; make it relative to the viewport. */
   padding: 4px 1rem;
+  padding-right: 1em;
   border: solid 1px var(--search-border-color);
-  /* Color */
+
+  /* Text */
+  text-overflow: ellipsis;
+
   /* Other */
   border-radius: 15px;
   /* Has a nice animation when the search bar receives focus. */
@@ -369,7 +372,7 @@
   margin-top: 22px;
   padding-bottom: 4px;
 
-  line-height: 1.1;
+  line-height: 1.2;
 
   /* Color */
   background-color: var(--footer-bg-color);
@@ -381,7 +384,7 @@
 .application-footer__advanced-nav {
   margin: .1rem var(--page-gutter);
 
-  font-size: 11px;
+  font-size: 10px;
   text-align: left;
 }
 
@@ -405,6 +408,8 @@
   /* Display & Box Model */
   display: flex;
   width: 100%;
+  margin-top: 4px;
+
   /* Other */
   flex-wrap: wrap;
   align-items: center;
@@ -443,13 +448,22 @@
 .toggle-box__toggle::after {
   content: url("img/fa/chevron-circle-down.svg");
   display: inline-block;
-  width: 10px;
+  width: 11px;
 }
 
 .toggle-box__toggle {
   text-decoration: underline;
 
   color: #0f2657;
+}
+
+/**
+ * MODIFIER large
+ *
+ * A slightly larger toggle-box.
+ */
+.toggle-box--large > .toggle-box__toggle {
+  font-size: 16px;
 }
 
 /******************************* INLINE MARKUP ******************************/
