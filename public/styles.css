@@ -224,6 +224,10 @@
   transition: box-shadow .125s;
 }
 
+.search-bar__input:empty {
+  font-style: italic;
+}
+
 /* Inspiration: https://codepen.io/himalayasingh/pen/dqjLgO */
 
 .search-bar__input:focus {
@@ -368,16 +372,32 @@
   /* Display & Box Model */
   width: 100vw;
   margin-top: 22px;
+
+  line-height: 1;
+
   /* Color */
   background-color: var(--footer-bg-color);
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-.application-footer__about {
+
+.application-footer__about,
+.application-footer__advanced-nav {
   margin: .1rem var(--page-gutter);
-  text-align: center;
-  line-height: 1.1;
-  color: #555;
+
+  font-size: 11px;
+  text-align: left;
+}
+
+.application-footer__about,
+.application-footer__advanced-nav,
+.application-footer__about a:link,
+.application-footer__advanced-nav a:link {
+  color: #404040;
+}
+
+.application-footer__advanced-nav a:link {
+    font-weight: 600;
 }
 
 /**

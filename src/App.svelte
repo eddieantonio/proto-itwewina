@@ -28,10 +28,14 @@
     <a class="partner-logos__logo" href="http://fnuniv.ca/"><img src="img/fnu-logo.png" alt="FNU"></a>
   </div>
   <p class="application-footer__about">
-    <small> 2019 © University of Alberta. This app uses icons from
-      <a href="https://github.com/FortAwesome/Font-Awesome/tree/5.11.1">
-        Font Awesome Free</a>, distributed under the terms of the
-      <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 license</a>.
-    </small>
+    2019 © University of Alberta.
   </p>
+  <p class="application-footer__about"> Some icons from
+      <a href="https://github.com/FortAwesome/Font-Awesome/tree/5.11.1">
+        Font Awesome Free</a>, licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+  </p>
+  <nav class="application-footer__advanced-nav">
+    <a href="/change-locale?en-x-linguist">Enable Linguist Mode</a>
+  </nav>
 </footer>
