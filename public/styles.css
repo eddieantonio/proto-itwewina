@@ -207,6 +207,7 @@
   /* Positioning */
   /* Display & Box Model */
   flex: 1;
+  min-width: 50vw; /* The max width actually was way too big before; make it relative to the viewport. */
   padding: 4px 1rem;
   border: solid 1px var(--search-border-color);
   /* Color */
@@ -366,8 +367,9 @@
   /* Display & Box Model */
   width: 100vw;
   margin-top: 22px;
+  padding-bottom: 4px;
 
-  line-height: 1;
+  line-height: 1.1;
 
   /* Color */
   background-color: var(--footer-bg-color);
