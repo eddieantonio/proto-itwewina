@@ -10,12 +10,12 @@
  */
 
 :root {
-  /* Positioning */
-  --page-gutter:         1rem;  /* Space on either side of the viewport. */
-  --header-stripe-width:  8px;  /* Width of the "stripe" to the left of the title. */
-
-  /* Font sizes */
-  --definition-title-size: 28px;
+  /* Positioning and sizes */
+  --page-gutter:               1rem; /* Space on either side of the viewport. */
+  --header-stripe-width:        8px; /* Width of the "stripe" to the left of the title. */
+  --small-pad:                  4px;
+  --medium-gap:                 6px;
+  --search-focus-outline-size:  4px; /* How far the focus colour should expand. */
 
   /* Colors */
   --app-bg-color:           #F7F7F7; /* Background color of the entire application. */
@@ -28,8 +28,13 @@
   --search-border-color:    #979797;
   --search-focus-color:     #1C9DFE; /* Color of the search bar when focused */
 
+  /* Font sizes */
+  --definition-title-size:     28px;
+  /* Font families */
   --heading-font-family: Raleway, Euphemia UCAS sans-serif;
   --body-font-family: Open Sans, Euphemia UCAS, sans-serif;
+  
+  --paradigm-border-radius:     4px;
 }
 
 * {
@@ -196,7 +201,7 @@
   /* Display & Box Model */
   flex: 1;
   min-width: 50vw; /* The max width actually was way too big before; make it relative to the viewport. */
-  padding: 4px 1rem;
+  padding: var(--small-pad) 1rem;
   padding-right: 1em;
   border: solid 1px var(--search-border-color);
 
@@ -219,7 +224,7 @@
 
 .search-bar__input:focus {
   box-shadow: 0 0 0 1px white,
-              0 0 0 4px var(--search-focus-color);
+              0 0 0 var(--search-focus-outline-size) var(--search-focus-color);
 }
 
 .search-bar:invalid .search-bar__button {
@@ -286,7 +291,7 @@
 
   background: #fff;
 
-  border-radius: 4px;
+  border-radius: var(--paradigm-border-radius);
 }
 
 .paradigm__table {
@@ -302,7 +307,7 @@
 
   width: 100%;
   border: 0;
-  padding-bottom: 4px;
+  padding-bottom: var(--paradigm-border-radius);
 
   color: #fff;
   background-color: #283c95;
@@ -358,8 +363,8 @@
 .application-footer {
   /* Display & Box Model */
   width: 100vw;
-  margin-top: 22px;
-  padding-bottom: 4px;
+  margin-top: 1rem;
+  padding-bottom: var(--small-pad);
 
   line-height: 1.2;
 
@@ -397,7 +402,7 @@
   /* Display & Box Model */
   display: flex;
   width: 100%;
-  margin-top: 4px;
+  margin-top: var(--small-pad);
 
   /* Other */
   flex-wrap: wrap;
@@ -413,7 +418,7 @@
   /* Positioning */
   flex: 1;
   /* Display & Box Model */
-  margin: 4px .5rem;
+  margin: var(--small-pad) .5rem;
   /* Text */
   text-align: center;
 }
