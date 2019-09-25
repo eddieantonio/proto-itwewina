@@ -23,8 +23,7 @@
   --app-body-color:         #000000; /* Color of body text. */
   --cite-text-color:        #1A2635; /* Color of dictionary citation element. */
   --footer-bg-color:        #EBE9E9; /* Background color of the "sunken" footer. */
-  /* TODO: should this be the same as the title color? */
-  --header-stripe-color:    #115FE8; /* Color of the "stripe" to the left of the title. */
+  --header-stripe-color:    var(--app-title-color); /* Color of the "stripe" to the left of the title. */
   --search-border-color:    #979797; /* Color of the search bar's (unfocused) border */
   --search-focus-color:     #1C9DFE; /* Color of the search bar when focused */
   --box-bg-color:           #FFFDFD; /* Background color of "boxes" */
