@@ -5,13 +5,15 @@
 
   import DefaultScreen from './screens/Default.svelte';
   import HomeScreen from './screens/Home.svelte';
+  import SearchForNiska from './screens/SearchForNiska.svelte';
 
   import {orthography} from './components/Cree/store';
   import {SRO_MACRON, SRO_CIRCUMFLEX, SYLLABICS} from './components/Cree';
 
   const screens = {
     'default': DefaultScreen,
-    'home': HomeScreen
+    'home': HomeScreen,
+    'niska': SearchForNiska,
   };
 
   const orthographies = {
