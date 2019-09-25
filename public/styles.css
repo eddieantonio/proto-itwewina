@@ -81,9 +81,15 @@
   font: normal 300 14px/normal var(--body-font-family);
 }
 
+.application__header {
+  /* Display & Box Model */
+  width: 100vw;
+  margin: 0 0 .75rem;
+}
+
 .application__content {
-  margin-top: var(--medium-gap);
   flex: 1;
+  margin-top: var(--medium-gap);
 }
 
 .application__panel {
@@ -91,13 +97,17 @@
   padding-right: var(--page-gutter);
 }
 
-/********************************* HEADINGS *********************************/
+/********************************* TOP BAR *********************************/
 
-.application-header {
-  /* Display & Box Model */
-  width: 100vw;
+.top-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-bar__heading {
+  flex: 1;
   padding: 0 var(--page-gutter);
-  margin: 0 0 .75rem;
+
   background: transparent;  /* Fallback */
   background: linear-gradient(to right, var(--header-stripe-color) 0%,
                                         var(--header-stripe-color) var(--header-stripe-width),
@@ -105,44 +115,32 @@
                                         rgba(0,0,0,0) 100%);
 }
 
-/* A link directly within the header is treated normally. */
-.application-header > a {
-  text-decoration: none;
-}
+/********************************* BRANDING *********************************/
 
-.application-header > a:link,
-.application-header > a:hover,
-.application-header > a:hover,
-.application-header > a:visited,
-.application-header > a:active {
-  color: inherit;
-}
-
-.application-header__heading {
-  /* Display & Box Model */
+.branding__heading {
   margin: 0 auto;
 }
 
-/**
- * BLOCK  application-title
- *
- * The main title of the application.
- */
-.application-title {
+/* Make the main heading look consistent, regardless of its state: */
+.branding a:link,
+.branding a:hover,
+.branding a:hover,
+.branding a:visited,
+.branding a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.branding__title {
   /* Color */
   color: var(--app-title-color);
 
   /* Text */
-  font: 500 24px/normal var(--heading-font-family);
-  letter-spacing: 3px;
+  font: 400 24px/normal var(--heading-font-family);
+  letter-spacing: 4px;
 }
 
-/**
- * BLOCK application-subtitle
- *
- * The subtitle of the application.
- */
-.application-subtitle {
+.branding__subtitle {
   /* Text */
   font-weight: 300;
   font-size: 12px;
