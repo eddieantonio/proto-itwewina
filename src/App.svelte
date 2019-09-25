@@ -1,5 +1,6 @@
 <script>
   import Header from './components/Header.svelte';
+  import Search from './components/Search.svelte';
   import Footer from './components/Footer.svelte';
 
   import DefaultScreen from './screens/Default.svelte';
@@ -40,5 +41,6 @@
 
 
 <Header />
+<Search />
 <svelte:component this={screen} />
 <Footer />

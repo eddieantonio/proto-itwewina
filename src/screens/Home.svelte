@@ -1,10 +1,7 @@
 <script>
   import Cree from '../components/Cree.svelte';
   import CiteDict from '../components/CiteDict.svelte';
-  import Navigation from '../components/Navigation.svelte';
 </script>
-
-<Navigation />
 
 <main class="application__content application__panel">
   <article class="prose box">
