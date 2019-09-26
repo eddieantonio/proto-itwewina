@@ -1,5 +1,6 @@
 <script>
-  import Cree from '../components/Cree.svelte';
+  import Cree from './Cree.svelte';
+  import OrthographySelector from './OrthographySelector.svelte';
 </script>
 
 <div class="top-bar app__header">
@@ -30,25 +31,7 @@
           </label>
         </fieldset>
 
-        <fieldset class="menu__category">
-          <legend class="menu__caption"> Show Cree words in </legend>
-
-          <label class="menu-choice">
-            <input class="menu-choice__input" type="radio" name="orth" value="Latn" checked>
-            <span class="menu-choice__label"> SRO (êîôâ) </span>
-          </label>
-
-          <label class="menu-choice">
-            <input class="menu-choice__input" type="radio" name="orth" value="Latn-x-macron">
-            <span class="menu-choice__label"> SRO (ēīōā) </span>
-          </label>
-
-          <label class="menu-choice">
-            <input class="menu-choice__input" type="radio" name="orth" value="Latn">
-            <span class="menu-choice__label"> Syllabics (ᒐᐦᑭᐯᐦᐃᑲᓇ) </span>
-          </label>
-        </fieldset>
-
+        <OrthographySelector />
       </div>
     </details>
   </nav>
