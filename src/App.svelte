@@ -44,5 +44,7 @@
 
 <Header />
 <Search />
-<svelte:component this={screen} />
+<main class="app__content app__pane">
+  <svelte:component this={screen} />
+</main>
 <Footer />

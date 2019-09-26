@@ -32,7 +32,7 @@
   /* --paradigm-border-color:  #828A95; */ /* wat. */
   --prose-title-color:      #283C95;
   --link-color:             #189cda; /* Regular links */
-  --darker-link-color:      #0F2657; /* "Dark" links */
+  --link-action-color:      #0F2657; /* A link that implies an immediate action. */
 
   /* Font sizes */
   --definition-title-size:     28px;
@@ -43,6 +43,15 @@
 
   --search-input-border-radius: 15px;
   --paradigm-border-radius:      4px;
+}
+
+/**
+ * When selecting text on the page, use the branding color as the background,
+ * to make selecting things on this page unique!
+ */
+::selection {
+  color: #fff;
+  background-color: var(--app-title-color);
 }
 
 * {
@@ -60,12 +69,12 @@
   /* Other */
 }
 
-/******************************* APP *******************************/
+/*********************************** APP ***********************************/
 
 /**
  * BLOCK app
  *
- * A block for the ENTIRE app.
+ * A block containing the ENTIRE application.
  */
 .app {
   /* Display & Box Model */
@@ -81,33 +90,67 @@
   font: normal 300 14px/normal var(--body-font-family);
 }
 
-.app a:link {
+/**
+ * Link styles for the application.
+ */
+.app a:link,
+.app a:visited
+{
   color: var(--link-color);
 }
+/* TODO: figure out highlight color of links */
 
+/**
+ * ELEMENT app__header
+ *
+ * The header for the entire application.
+ */
 .app__header {
   /* Display & Box Model */
   width: 100vw;
   margin: 0 0 .75rem;
 }
 
+/**
+ * ELEMENT app__content
+ *
+ * The element containing the main content on display in the application.
+ * The contents of this element are expected to change as the user interacts
+ * with the application.
+ */
 .app__content {
   flex: 1;
   margin-top: var(--medium-gap);
 }
 
-.app__panel {
-  padding-left: var(--page-gutter);
-  padding-right: var(--page-gutter);
+/**
+ * ELEMENT pp__pane
+ *
+ * Any division of the application that creates a "pane".
+ *
+ * The header and footer are exceptions to this.
+ */
+.app__pane {
+  padding: 0 var(--page-gutter);
 }
 
 /********************************* TOP BAR *********************************/
 
+/**
+ * BLOCK top-bar
+ *
+ * A bar that runs across the top of the application.
+ */
 .top-bar {
   display: flex;
   flex-direction: row;
 }
 
+/**
+ * BLOCK top-bar
+ *
+ * Space within the top-bar in which site branding can appear.
+ */
 .top-bar__heading {
   flex: 1;
   padding: 0 var(--page-gutter);
@@ -121,11 +164,22 @@
 
 /********************************* BRANDING *********************************/
 
+/**
+ * BLOCK branding
+ *
+ * Displays the title and subtitle/tagline of the application.
+ */
+
+/**
+ * ELEMENT
+ *
+ * A heading that makes up the branding.
+ */
 .branding__heading {
   margin: 0 auto;
 }
 
-/* Make the main heading look consistent, regardless of its state: */
+/* Make the links in the heading look consistent, regardless of its state: */
 .branding a:link,
 .branding a:hover,
 .branding a:hover,
@@ -135,6 +189,11 @@
   text-decoration: none;
 }
 
+/**
+ * ELEMENT branding__title
+ *
+ * Contains the primary title of the application.
+ */
 .branding__title {
   /* Color */
   color: var(--app-title-color);
@@ -144,6 +203,11 @@
   letter-spacing: 4px;
 }
 
+/**
+ * ELEMENT branding__subtitle
+ *
+ * Contains the subtitle or tagline of the application.
+ */
 .branding__subtitle {
   /* Text */
   font-weight: 300;
@@ -158,28 +222,21 @@
  *
  * The main search panel.
  */
-.search {
-  /* Positioning */
-  /* Display & Box Model */
-  /* Color */
-  /* Text */
-  /* Other */
-}
 
 /**
  * ELEMENT advanced search.
+ *
+ * Shows options for advance search.
  */
 .search__advanced  {
-  /* Positioning */
-  /* Display & Box Model */
-  /* Color */
   /* Text */
   text-align: right;
-  /* Other */
 }
 
 /**
- * BLOCK search bar
+ * BLOCK search-bar
+ *
+ * Contains the input and controls to input a search query.
  */
 .search-bar {
   /* Positioning */
@@ -187,10 +244,8 @@
   /* Display & Box Model */
   display: flex;
   width: 100%;
-  /* Color */
   /* Text */
   font-size: var(--prominent-font-size);
-  /* Other */
 }
 
 /**
@@ -205,7 +260,9 @@
 }
 
 /**
- * ELEMENT search input
+ * ELEMENT search__input
+ *
+ * The actual input element that the user types the query into.
  */
 .search-bar__input {
   /* Display & Box Model */
@@ -225,23 +282,32 @@
   transition: box-shadow .125s;
 }
 
+/**
+ * How to display the placeholder when text has yet to be entered in the
+ * search input:
+ */
 .search-bar__input:placeholder-shown {
+  /* Color */
+  color: #959595;
+
+  /* Text */
   font-style: italic;
   font-weight: 300;
 }
 
-/* Inspiration: https://codepen.io/himalayasingh/pen/dqjLgO */
-
+/**
+ * Make it abundantly clear that the search input has focus.
+ */
 .search-bar__input:focus {
   box-shadow: 0 0 0 1px white,
               0 0 0 var(--search-focus-outline-size) var(--search-focus-color);
 }
 
-.search-bar:invalid .search-bar__button {
-  opacity: 50%;
-  cursor: not-allowed;
-}
-
+/**
+ * ELEMENT search-bar__button
+ *
+ * The button to press to execute the search.
+ */
 .search-bar__button {
   position: absolute;
   right: 0;
@@ -260,6 +326,15 @@
   margin-top: .125em;
   height: 1.125em;
 }
+
+/**
+ * Make the search icon look unusable when the user has not typed any query.
+ */
+.search-bar:invalid .search-bar__button {
+  opacity: 50%;
+  cursor: not-allowed;
+}
+
 
 /****************************** SEARCH RESULTS ******************************/
 
@@ -289,65 +364,71 @@
 }
 
 .definition-title__word {
-  /* Positioning */
-  /* Display & Box Model */
-  /* Color */
   /* Text */
   font-style: normal;
   font-weight: bold;
-  /* Other */
 }
 
 .definition-title__pos {
-  /* Positioning */
-  /* Display & Box Model */
-  /* Color */
   /* Text */
   font-style: normal;
   font-weight: normal;
-  /* Other */
 }
 
 .meanings {
+  /* Display & Box model */
   padding: 0;
 
+  /* Text */
   font-size: var(--prominent-font-size);
 
+  /* Other */
   list-style-position: inside;
 }
 
 .meanings--search-result {
+  /* Display & Box model */
   padding: 0 .5em;
 
+  /* Text */
   font-size: 22px;
 }
 
 .paradigm {
+  /* Display & Box model */
   border: solid 1px var(--paradigm-border-color);
 
+  /* Color */
   background: var(--box-bg-color);
 
+  /* Other */
   border-radius: var(--paradigm-border-radius);
 }
 
 .paradigm__table {
+  /* Display & Box model */
   margin: 0 auto 15px;
   max-width: calc(100% - 2 * 22px); /* Have an 'inner margin' of 22px; */
 
+  /* Text */
   line-height: 1.5;
+
+  /* Other */
   border-spacing: 2em 0.5rem;
 }
 
 .paradigm__more-button {
+  /* Display & Box model */
   display: block;
-
   width: 100%;
   border: 0;
   padding-bottom: var(--paradigm-border-radius);
 
+  /* Color */
   color: #FFF;
   background-color: var(--paradigm-border-color);
 
+  /* Text */
   text-align: center;
   font-weight: inherit;
   line-height: 1.5;
@@ -488,7 +569,7 @@
 .toggle-box__toggle {
   text-decoration: underline;
 
-  color: var(--darker-link-color);
+  color: var(--link-action-color);
 }
 
 /**
