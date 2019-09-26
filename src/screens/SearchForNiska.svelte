@@ -7,34 +7,15 @@
   <section class="search-results">
     <ol class="search-results__results">
       <li>
-        <article>
-          <header>
-            <h2><dfn><a href="#"><Cree sro="niska" /></a></dfn> <b>(Noun)</b></h2>
+        <article class="definition definition__brief search-results__result">
+          <header class="definition__header">
+            <h2 class="definition-title">
+              <dfn class="definition-title__word"><a href="/define/niska"><Cree sro="niska" /></a></dfn>
+              <span class="definition-title__pos">(Noun)</span></h2>
           </header>
-          <ol>
-            <li> goose </li>
-          </ol>
-        </article>
-      </li>
-      
-      <li>
-        <article>
-          <header>
-            <h2><dfn><a href="#"><Cree sro="niskan" /></a></dfn> <b>(Noun)</b></h2>
-          </header>
-          <ol>
-            <li> my bone </li>
-          </ol>
-        </article>
-      </li>
 
-      <li>
-        <article>
-          <header>
-            <h2><dfn><a href="#"><Cree sro="niskaskwa" /></a></dfn> <b>(Noun)</b></h2>
-          </header>
-          <ol>
-            <li> goose grass </li>
+          <ol class="meanings">
+            <li class="meanings__meaning"> goose <CiteDict source="CW"/> <CiteDict source="MD"/> </li>
           </ol>
         </article>
       </li>
