@@ -162,6 +162,10 @@
                                         rgba(0,0,0,0) 100%);
 }
 
+.top-bar__nav {
+  margin-right: var(--small-pad);
+}
+
 /********************************* BRANDING *********************************/
 
 /**
@@ -562,8 +566,17 @@
 
 .toggle-box__toggle::after {
   content: url("img/fa/chevron-circle-down.svg");
+
   display: inline-block;
   width: 11px;
+  margin-left: var(--small-pad);
+
+  transition: transform .25s;
+  transform: rotate(-180deg);
+}
+
+.toggle-box[open] > .toggle-box__toggle::after {
+  transform: rotate(0);
 }
 
 .toggle-box__toggle {
@@ -581,6 +594,75 @@
   font-size: 16px;
 }
 
+
+/**
+ * MODIFIER with-menu
+ *
+ * Makes it so that the menu can be absolutely positioned.
+ */
+.toggle-box--with-menu {
+  position: relative;
+}
+
+.toggle-box__menu {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+
+  opacity: 0;
+  transition: opacity .25s;
+}
+
+.toggle-box[open] > .toggle-box__menu {
+  opacity: 1;
+}
+
+
+/*********************************** MENU ***********************************/
+
+.menu {
+  min-width: 160px;
+  border: solid 1px rgba(209, 209, 209, 0.33);
+
+  background-color: #fff;
+  box-shadow: 4px 4px 8px 0 rgba(74, 74, 74, 0.24);
+
+  border-radius: 4px;
+}
+
+.menu__caption {
+  color: #626262;
+  padding: 9px;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.menu__category {
+  padding: 0;
+  border: 0;
+}
+
+.menu-choice {
+}
+
+.menu-choice__input {
+  display: none;
+}
+
+.menu-choice__label {
+  display: block;
+  padding: 9px;
+}
+
+.menu-choice__input:checked + .menu-choice__label {
+  font-weight: 600;
+
+  background-color: #DEE4F9;
+}
+
+/*********************************** BOX ************************************/
+
 /**
  * A panel that stands out from its background, as it's in a box!
  */
@@ -596,6 +678,7 @@
 .box--rounded {
   border-radius: 4px;
 }
+
 
 
 /******************************* INLINE MARKUP ******************************/
