@@ -19,6 +19,43 @@
     <summary class="toggle-box__toggle">
       Advanced search
     </summary>
-    TODO: advanced search.
+    <div class="menu menu--wide toggle-box__menu">
+      <fieldset class="menu__category">
+        <legend class="menu__caption"> Dictionary Source </legend>
+
+        <label class="menu-choice">
+          <input class="menu-choice__check" type="checkbox" name="lang" value="en" checked>
+          <div class="menu-choice__label">
+            <h2> Include Cree : Words (<span class="cite-dict">CW</span>) </h2>
+            <p class="reference"> Wolvengery, A. (2011). <i>Cree: Words.</i>
+            Regina: University of Regina Press.
+            </p>
+          </div>
+        </label>
+
+        <label class="menu-choice">
+          <input class="menu-choice__check" type="checkbox" name="lang" value="en" checked>
+          <div class="menu-choice__label">
+            <h2> Include Maskwacîs : Words (<span class="cite-dict">MD</span>) </h2>
+            <p class="reference"> <i>Maskwacîs Dictionary of Cree
+            Words/Nehiyaw Pîkiskweninisa.</i> (2009). Maskwacîs: Maskwachees
+            Cultural College.  </p>
+          </div>
+        </label>
+
+        <label class="menu-choice">
+          <input class="menu-choice__check" type="checkbox" name="lang" value="en" checked>
+          <div class="menu-choice__label">
+            <h2> Include Alberta Elders' Cree Dictionary (<span class="cite-dict">EC</span>) </h2>
+            <p class="reference"> LeClaire, N., &amp; Cardinal, G. (2002).
+            <i>Alberta Elders' Cree Dictionary/alperta ohci kehtehayak nehiyaw
+            otwestamâkewasinahikan.</i> E. Waugh (Ed.). Edmonton: The
+            University of Alberta Press.
+            </p>
+          </div>
+        </label>
+
+      </fieldset>
+    </div>
   </details>
 </nav>

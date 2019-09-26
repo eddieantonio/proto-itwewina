@@ -11,7 +11,7 @@
   </header>
 
   <nav class="top-bar__nav">
-    <details class="toggle-box toggle-box--with-menu" open>
+    <details class="toggle-box toggle-box--with-menu">
       <summary class="toggle-box__toggle">
         English (êîôâ)
       </summary>
