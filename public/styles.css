@@ -31,7 +31,8 @@
   --paradigm-border-color:  #283C95; /* Color of the paradigm border and button. */
   /* --paradigm-border-color:  #828A95; */ /* wat. */
   --prose-title-color:      #283C95;
-  --link-color:             #0F2657; /* Regular links */
+  --link-color:             #189cda; /* Regular links */
+  --darker-link-color:      #0F2657; /* "Dark" links */
 
   /* Font sizes */
   --definition-title-size:     28px;
@@ -78,6 +79,10 @@
 
   /* Text */
   font: normal 300 14px/normal var(--body-font-family);
+}
+
+.application a:link {
+  color: var(--link-color);
 }
 
 .application__header {
@@ -256,11 +261,31 @@
   height: 1.125em;
 }
 
+/****************************** SEARCH RESULTS ******************************/
+
+.search-results__results {
+  padding: 0;
+
+  list-style: none;
+}
+
+.search-results__result {
+  margin-top: 19px;
+}
+
+.search-results__result:first-of-type {
+  margin-top: 0;
+}
+
 
 /******************************** DEFINITION ********************************/
 
 .definition-title {
   font-size: var(--definition-title-size);
+}
+
+.definition-title--search-result {
+  margin: 0;
 }
 
 .definition-title__word {
@@ -289,6 +314,12 @@
   font-size: var(--prominent-font-size);
 
   list-style-position: inside;
+}
+
+.meanings--search-result {
+  padding: 0 .5em;
+
+  font-size: 22px;
 }
 
 .paradigm {
@@ -457,7 +488,7 @@
 .toggle-box__toggle {
   text-decoration: underline;
 
-  color: var(--link-color);
+  color: var(--darker-link-color);
 }
 
 /**
@@ -479,6 +510,10 @@
   background-color: var(--box-bg-color);
 
   box-shadow: 0 1px 1px 0 rgba(129, 127, 127, 0.5);
+}
+
+.box--rounded {
+  border-radius: 4px;
 }
 
 

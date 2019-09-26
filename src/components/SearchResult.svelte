@@ -8,16 +8,16 @@
   export let meanings;
 </script>
 
-<li>
-  <article class="definition definition__brief search-results__result">
+<li class="search-results__result">
+  <article class="definition box box--rounded">
     <header class="definition__header">
-      <h2 class="definition-title">
+      <h2 class="definition-title definition-title--search-result">
         <dfn class="definition-title__word"><a href="/define/{wordform}"><Cree sro={wordform} /></a></dfn>
         <span class="definition-title__pos">({pos})</span>
       </h2>
     </header>
 
-    <ol class="meanings">
+    <ol class="meanings meanings--search-result">
       {#each meanings as {translation, sources }}
         <li class="meanings__meaning"> {translation}
           {#each sources as sourceID}
