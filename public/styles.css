@@ -60,14 +60,14 @@
   /* Other */
 }
 
-/******************************* APPLICATION *******************************/
+/******************************* APP *******************************/
 
 /**
- * BLOCK application
+ * BLOCK app
  *
- * A block for the ENTIRE application.
+ * A block for the ENTIRE app.
  */
-.application {
+.app {
   /* Display & Box Model */
   display: flex;
   min-height: 100vh;
@@ -81,22 +81,22 @@
   font: normal 300 14px/normal var(--body-font-family);
 }
 
-.application a:link {
+.app a:link {
   color: var(--link-color);
 }
 
-.application__header {
+.app__header {
   /* Display & Box Model */
   width: 100vw;
   margin: 0 0 .75rem;
 }
 
-.application__content {
+.app__content {
   flex: 1;
   margin-top: var(--medium-gap);
 }
 
-.application__panel {
+.app__panel {
   padding-left: var(--page-gutter);
   padding-right: var(--page-gutter);
 }
@@ -393,14 +393,14 @@
 }
 
 
-/**************************** APPLICATION FOOTER ****************************/
+/**************************** APP FOOTER ****************************/
 
 /**
- * BLOCK application-footer
+ * BLOCK app-footer
  *
- * The footer at the bottom of the application.
+ * The footer at the bottom of the app.
  */
-.application-footer {
+.app-footer {
   /* Display & Box Model */
   width: 100vw;
   margin-top: 1rem;
@@ -414,22 +414,22 @@
 }
 
 
-.application-footer__about,
-.application-footer__advanced-nav {
+.app-footer__about,
+.app-footer__advanced-nav {
   margin: .1rem var(--page-gutter);
 
   font-size: 10px;
   text-align: left;
 }
 
-.application-footer__about,
-.application-footer__advanced-nav,
-.application-footer__about a:link,
-.application-footer__advanced-nav a:link {
+.app-footer__about,
+.app-footer__advanced-nav,
+.app-footer__about a:link,
+.app-footer__advanced-nav a:link {
   color: var(--footer-text-color);
 }
 
-.application-footer__advanced-nav a:link {
+.app-footer__advanced-nav a:link {
     font-weight: 600;
 }
 

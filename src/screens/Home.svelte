@@ -3,7 +3,7 @@
   import CiteDict from '../components/CiteDict.svelte';
 </script>
 
-<main class="application__content application__panel">
+<main class="app__content app__panel">
   <article class="prose box">
     <h1 class="prose__heading"><Cree sro="tânisi!" /></h1>
 

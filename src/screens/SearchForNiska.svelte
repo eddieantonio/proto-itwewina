@@ -2,7 +2,7 @@
   import SearchResult from '../components/SearchResult.svelte';
 </script>
 
-<main class="application__content application__panel">
+<main class="app__content app__panel">
   <section class="search-results">
     <ol class="search-results__results">
       <SearchResult wordform="niska" pos="Noun" meanings={[

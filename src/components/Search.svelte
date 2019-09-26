@@ -1,4 +1,4 @@
-<nav class="search application__panel">
+<nav class="search app__panel">
   <form class="search__search-bar search-bar" action="search" method="GET">
     <label class="search-bar__label" for="search">Search</label>
     <!-- Should autofocus on homepage only! -->

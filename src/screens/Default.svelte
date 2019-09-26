@@ -3,7 +3,7 @@
   import CiteDict from '../components/CiteDict.svelte';
 </script>
 
-<main class="application__content application__panel">
+<main class="app__content app__panel">
   <article class="definition">
     <header class="definition__header">
       <h1 class="definition-title">

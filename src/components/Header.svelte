@@ -2,7 +2,7 @@
   import Cree from '../components/Cree.svelte';
 </script>
 
-<div class="top-bar application__header">
+<div class="top-bar app__header">
   <header class="branding top-bar__heading ">
     <a href="/">
       <h1 class="branding__heading branding__title"><Cree sro="itwêwina" /></h1>
@@ -18,4 +18,3 @@
     </details>
   </nav>
 </div>
-
