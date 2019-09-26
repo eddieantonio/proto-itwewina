@@ -15,7 +15,7 @@
     </button>
   </form>
 
-  <details class="search__advanced toggle-box toggle-box--large">
+  <details class="search__advanced toggle-box toggle-box--large toggle-box--link-like">
     <summary class="toggle-box__toggle">
       Advanced search
     </summary>

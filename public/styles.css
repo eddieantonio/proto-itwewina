@@ -27,7 +27,7 @@
   --search-border-color:    #979797; /* Color of the search bar's (unfocused) border */
   --search-focus-color:     #1C9DFE; /* Color of the search bar when focused */
   --box-bg-color:           #FFFDFD; /* Background color of "boxes" */
-  --footer-text-color:      #404040; /* Color of text in the footer. */
+  --menu-caption-color:     #626262; /* Color of text for menu captions. */
   --paradigm-border-color:  #283C95; /* Color of the paradigm border and button. */
   /* --paradigm-border-color:  #828A95; */ /* wat. */
   --prose-title-color:      #283C95;
@@ -42,7 +42,7 @@
   --body-font-family: Open Sans, Euphemia UCAS, sans-serif;
 
   --search-input-border-radius: 15px;
-  --paradigm-border-radius:      4px;
+  --border-radius:      4px;
 }
 
 /**
@@ -50,7 +50,7 @@
  * to make selecting things on this page unique!
  */
 ::selection {
-  color: #fff;
+  color: #FFF;
   background-color: var(--app-title-color);
 }
 
@@ -406,7 +406,7 @@
   background: var(--box-bg-color);
 
   /* Other */
-  border-radius: var(--paradigm-border-radius);
+  border-radius: var(--border-radius);
 }
 
 .paradigm__table {
@@ -426,7 +426,7 @@
   display: block;
   width: 100%;
   border: 0;
-  padding-bottom: var(--paradigm-border-radius);
+  padding-bottom: var(--border-radius);
 
   /* Color */
   color: #FFF;
@@ -440,7 +440,7 @@
   /* Hack to make the rounded border look like it belongs to the parent. If we
    * don't make the radius a bit tighter, this border protrudes in a weird
    * way. */
-  --tighter-br: calc(var(--paradigm-border-radius) - 2px);
+  --tighter-br: calc(var(--border-radius) - 2px);
   border-radius: 0 0 var(--tighter-br) var(--tighter-br);
 }
 
@@ -560,6 +560,13 @@
   /* Display & Box Model */
   display: block;
 
+  /* Text */
+  font-weight: 600;
+  text-decoration: underline;
+
+  /* Color */
+  color: #000;
+
   /* Other */
   cursor: pointer;
 }
@@ -572,16 +579,17 @@
   margin-left: var(--small-pad);
 
   transition: transform .25s;
-  transform: rotate(-180deg);
+  transform: rotate(-90deg);
 }
 
 .toggle-box[open] > .toggle-box__toggle::after {
-  transform: rotate(0);
+  transform: rotate(0deg);
 }
 
-.toggle-box__toggle {
-  text-decoration: underline;
-
+/**
+ * Makes the toggle look like a link.
+ */
+.toggle-box--link-like > .toggle-box__toggle {
   color: var(--link-action-color);
 }
 
@@ -621,17 +629,17 @@
 /*********************************** MENU ***********************************/
 
 .menu {
-  min-width: 160px;
+  min-width: 10rem;
   border: solid 1px rgba(209, 209, 209, 0.33);
 
-  background-color: #fff;
+  background-color: var(--box-bg-color);
   box-shadow: 4px 4px 8px 0 rgba(74, 74, 74, 0.24);
 
-  border-radius: 4px;
+  border-radius: var(--border-radius);
 }
 
 .menu__caption {
-  color: #626262;
+  color: var(--menu-caption-color);
   padding: 9px;
 
   font-size: 12px;
@@ -641,9 +649,6 @@
 .menu__category {
   padding: 0;
   border: 0;
-}
-
-.menu-choice {
 }
 
 .menu-choice__input {
@@ -676,9 +681,8 @@
 }
 
 .box--rounded {
-  border-radius: 4px;
+  border-radius: var(--border-radius);
 }
-
 
 
 /******************************* INLINE MARKUP ******************************/
