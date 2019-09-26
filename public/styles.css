@@ -511,7 +511,7 @@
 }
 
 .app-footer__advanced-nav a:link {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /**
@@ -609,7 +609,9 @@
   /* Color */
   color: var(--cite-text-color);
   /* Text */
-  font: normal normal 900 11px/normal sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
 }
 
 /**
