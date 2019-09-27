@@ -9,6 +9,8 @@
  * http://getbem.com/naming/
  */
 
+/* TODO: use 400 font-weights as default instead of 300 (light). */
+
 :root {
   /* Positioning and sizes */
   --page-gutter:               1rem; /* Space on either side of the viewport. */
@@ -29,7 +31,8 @@
   --box-bg-color:           #FFFDFD; /* Background color of "boxes" */
   --menu-caption-color:     #626262; /* Color of text for menu captions. */
   --paradigm-border-color:  #283C95; /* Color of the paradigm border and button. */
-  /* --paradigm-border-color:  #828A95; */ /* wat. */
+  /* TODO: match this to be a different grey border colour: */
+  /* --paradigm-border-color:  #828A95; */
   --prose-title-color:      #283C95;
   --link-color:             #189cda; /* Regular links */
   --link-action-color:      #0F2657; /* A link that implies an immediate action. */
