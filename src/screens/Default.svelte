@@ -3,6 +3,10 @@
   import CiteDict from '../components/CiteDict.svelte';
 </script>
 
+<svelte:head>
+  <title>minôs — itwêwina: the online Cree dictionary</title>
+</svelte:head>
+
 <article class="definition">
   <header class="definition__header">
     <h1 class="definition-title">

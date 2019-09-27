@@ -2,6 +2,10 @@
   import SearchResult from '../components/SearchResult.svelte';
 </script>
 
+<svelte:head>
+  <title>🔎 ”niska” — itwêwina: the online Cree dictionary</title>
+</svelte:head>
+
 <section class="search-results">
   <ol class="search-results__results">
     <SearchResult wordform="niska" pos="Noun" meanings={[

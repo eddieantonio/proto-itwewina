@@ -3,6 +3,10 @@
   import CiteDict from '../components/CiteDict.svelte';
 </script>
 
+<svelte:head>
+  <title>itwêwina: the online Cree dictionary</title>
+</svelte:head>
+
 <article class="prose box">
   <h1 class="prose__heading"><Cree sro="tânisi!" /></h1>
 
