@@ -13,10 +13,10 @@
 
   <nav class="top-bar__nav">
     <details class="toggle-box toggle-box--with-menu">
-      <summary class="toggle-box__toggle">
+      <summary id="language-button" class="toggle-box__toggle" aria-haspopup="menu" role="button">
         English (êîôâ)
       </summary>
-      <div class="menu toggle-box__menu">
+      <div class="menu toggle-box__menu" role="menu" aria-labelledby="language-button">
         <fieldset class="menu__category">
           <legend class="menu__caption"> Language </legend>
 
