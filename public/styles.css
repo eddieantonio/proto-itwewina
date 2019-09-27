@@ -571,6 +571,10 @@
   cursor: pointer;
 }
 
+.toggle-box__toggle::-webkit-details-marker {
+  display: none;
+}
+
 .toggle-box__toggle::after {
   content: url("img/fa/chevron-circle-down.svg");
 
