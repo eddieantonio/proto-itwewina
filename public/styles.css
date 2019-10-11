@@ -737,6 +737,34 @@ a.menu-choice__label:active {
   border-radius: var(--border-radius);
 }
 
+/***************************** SKIP TO CONTENT *****************************/
+
+.skip-to-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  font-size: larger;
+
+  background-color: white;
+}
+.skip-to-content:focus {
+  clip: auto;
+  z-index: 100;
+  width: auto;
+  height: auto;
+}
+
+@media screen, print {
+  .skip-to-content {
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+}
+
 
 /******************************* INLINE MARKUP ******************************/
 

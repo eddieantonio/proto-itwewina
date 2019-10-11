@@ -42,9 +42,10 @@
 </script>
 
 
+<a href="#start-of-content" tabindex="0" class="skip-to-content">Skip to content</a>
 <Header />
 <Search />
-<main class="app__content app__pane">
+<main id="start-of-content" class="app__content app__pane">
   <svelte:component this={screen} />
 </main>
 <Footer />
