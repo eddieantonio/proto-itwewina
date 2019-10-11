@@ -694,17 +694,21 @@ html {
   border: 0;
 }
 
-.menu-choice__input {
-  display: none;
-}
-
 .menu-choice__label {
   display: block;
   padding: 9px;
 }
 
+a.menu-choice__label:link,
+a.menu-choice__label:visited,
+a.menu-choice__label:hover, 
+a.menu-choice__label:active {
+  color: inherit;
+  text-decoration: none;
+}
+
 .menu-choice--selected {
-  font-weight: 600;
+  font-weight: var(--strong-font-weight);
 
   background-color: #DEE4F9;
 }

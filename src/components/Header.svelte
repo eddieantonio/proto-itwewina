@@ -12,19 +12,20 @@
   </header>
 
   <nav class="top-bar__nav">
-    <details class="toggle-box toggle-box--with-menu" open>
-      <summary id="language-button" class="toggle-box__toggle" aria-haspopup="menu" role="button">
+    <details class="toggle-box toggle-box--with-menu">
+      <summary id="language-selector__button" class="toggle-box__toggle"
+      aria-haspopup="menu" role="button" aria-label="Select language and writing system">
         English (êîôâ)
       </summary>
-      <div class="menu toggle-box__menu" role="menu" aria-labelledby="language-button">
+      <div class="menu toggle-box__menu" role="menu" aria-labelledby="language-selector__button">
         <section class="menu__category" aria-labelledby="language-selector__language">
           <h2 class="menu__caption" id="language-selector__language"> Language </h2>
           <ul class="menu__choices">
-            <li class="menu-choice menu-choice--selected" aria-current="true">
-              <span class="menu-choice__label"> English </span>
+            <li role="menuitem" class="menu-choice menu-choice--selected">
+              <a href="?hl=en" class="menu-choice__label" aria-current="true">English</a>
             </li>
-            <li class="menu-choice">
-              <span class="menu-choice__label"> Cree/<Cree sro="nêhiyawêwin"/> </span>
+            <li role="menuitem" class="menu-choice">
+              <a href="?hl=crk" class="menu-choice__label">Cree/<Cree sro="nêhiyawêwin"/></a>
             </li>
           </ul>
         </section>
