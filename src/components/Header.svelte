@@ -12,7 +12,7 @@
   </header>
 
   <nav class="top-bar__nav">
-    <details class="toggle-box toggle-box--with-menu" open>
+    <details class="toggle-box toggle-box--with-menu">
       <summary id="language-selector__button" class="toggle-box__toggle"
       aria-haspopup="menu" role="button" aria-label="Select language and writing system">
         English (êîôâ)
