@@ -33,6 +33,7 @@
   --prose-title-color:      #283C95;
   --link-color:             #189cda; /* Regular links */
   --link-action-color:      #0F2657; /* A link that implies an immediate action. */
+  --placeholder-text-color: #949494; /* The placeholder should be faint, but visible. */
 
   /* Font sizes */
   --definition-title-size:     28px;
@@ -295,7 +296,7 @@
  */
 .search-bar__input:placeholder-shown {
   /* Color */
-  color: #959595;
+  color: var(--placeholder-text-color);
 
   /* Text */
   font-style: italic;
