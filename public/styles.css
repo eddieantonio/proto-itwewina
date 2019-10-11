@@ -28,9 +28,8 @@
   --search-focus-color:     #1C9DFE; /* Color of the search bar when focused */
   --box-bg-color:           #FFFDFD; /* Background color of "boxes" */
   --menu-caption-color:     #626262; /* Color of text for menu captions. */
-  --paradigm-border-color:  #283C95; /* Color of the paradigm border and button. */
-  /* TODO: match this to be a different grey border colour: */
-  /* --paradigm-border-color:  #828A95; */
+  --paradigm-button-color:  #283C95; /* Color of the paradigm "show more" button. */
+  --paradigm-border-color:  #828A95; /* Color of the paradigm border and button. */
   --prose-title-color:      #283C95;
   --link-color:             #189cda; /* Regular links */
   --link-action-color:      #0F2657; /* A link that implies an immediate action. */
@@ -434,7 +433,7 @@
 
   /* Color */
   color: #FFF;
-  background-color: var(--paradigm-border-color);
+  background-color: var(--paradigm-button-color);
 
   /* Text */
   text-align: center;
