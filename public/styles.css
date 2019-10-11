@@ -266,9 +266,15 @@ html {
  *
  * The label that says "Search: "
  */
-@media screen {
+@media screen, print {
+  /* Hide the label on the screen */
   .search-bar__label {
-    display: none;
+    /* I tried display: none and visibilty: hidden, but my accessiblily linter
+     * kept complaining, so let it have zero size and don't display content
+     * outside its zero-sized box: */
+    width: 0;
+
+    overflow: hidden;
   }
 }
 
@@ -701,7 +707,7 @@ html {
 
 a.menu-choice__label:link,
 a.menu-choice__label:visited,
-a.menu-choice__label:hover, 
+a.menu-choice__label:hover,
 a.menu-choice__label:active {
   color: inherit;
   text-decoration: none;
