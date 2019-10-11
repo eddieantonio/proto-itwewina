@@ -12,24 +12,22 @@
   </header>
 
   <nav class="top-bar__nav">
-    <details class="toggle-box toggle-box--with-menu">
+    <details class="toggle-box toggle-box--with-menu" open>
       <summary id="language-button" class="toggle-box__toggle" aria-haspopup="menu" role="button">
         English (êîôâ)
       </summary>
       <div class="menu toggle-box__menu" role="menu" aria-labelledby="language-button">
-        <fieldset class="menu__category">
-          <legend class="menu__caption"> Language </legend>
-
-          <label class="menu-choice">
-            <input class="menu-choice__input" type="radio" name="lang" value="en" checked>
-            <span class="menu-choice__label"> English </span>
-          </label>
-
-          <label class="menu-choice">
-            <input class="menu-choice__input" type="radio" name="lang" value="cr">
-            <span class="menu-choice__label"> Cree/<Cree sro="nêhiyawêwin"/> </span>
-          </label>
-        </fieldset>
+        <section class="menu__category" aria-labelledby="language-selector__language">
+          <h2 class="menu__caption" id="language-selector__language"> Language </h2>
+          <ul class="menu__choices">
+            <li class="menu-choice menu-choice--selected" aria-current="true">
+              <span class="menu-choice__label"> English </span>
+            </li>
+            <li class="menu-choice">
+              <span class="menu-choice__label"> Cree/<Cree sro="nêhiyawêwin"/> </span>
+            </li>
+          </ul>
+        </section>
 
         <OrthographySelector />
       </div>

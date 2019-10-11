@@ -35,6 +35,6 @@
       </tbody>
     </table>
 
-    <button class="paradigm__more-button"> more </button>
+    <button class="paradigm__more-button"> show more </button>
   </section>
 </article>

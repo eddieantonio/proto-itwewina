@@ -678,12 +678,18 @@ html {
 .menu__caption {
   color: var(--menu-caption-color);
   padding: 9px;
+  margin: 0;
 
   font-size: 12px;
-  font-weight: 600;
+  font-weight: var(--strong-font-weight);
 }
 
-.menu__category {
+.menu__choices {
+  list-style: none;
+}
+
+.menu__category, .menu__choices {
+  margin: 0;
   padding: 0;
   border: 0;
 }
@@ -697,7 +703,7 @@ html {
   padding: 9px;
 }
 
-.menu-choice__input:checked + .menu-choice__label {
+.menu-choice--selected {
   font-weight: 600;
 
   background-color: #DEE4F9;
