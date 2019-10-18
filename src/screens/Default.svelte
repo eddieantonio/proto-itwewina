@@ -38,7 +38,7 @@
         {#each paradigm as {label, wordform}}
         <tr class="paradigm-row">
           <th scope="row" class="paradigm-row__label">{label}</th>
-          <td><Cree sro={wordform} /></td>
+          <td class="paradigm-row__wordform"><Cree sro={wordform} /></td>
         </tr>
         {/each}
 
