@@ -1,6 +1,12 @@
 <script>
   import Cree from '../components/Cree.svelte';
   import CiteDict from '../components/CiteDict.svelte';
+
+  let paradigm = [
+    {label: 'One', wordform: 'mînos'},
+    {label: 'Many',  wordform: 'minôsak'},
+    {label: 'Further',  wordform: 'minôsa'},
+  ];
 </script>
 
 <svelte:head>
@@ -29,9 +35,13 @@
       <tbody>
         <tr> <th class="paradigm__panel-description" colspan="2"> Basic </th> </tr>
 
-        <tr> <td>One</td>       <td><Cree sro="minôs" /></td> </tr>
-        <tr> <td>Many</td>      <td><Cree sro="minôsak" /></td> </tr>
-        <tr> <td>Further</td>   <td><Cree sro="minôsa" /></td> </tr>
+        {#each paradigm as {label, wordform}}
+        <tr class="paradigm-row">
+          <th scope="row" class="paradigm-row__label">{label}</th>
+          <td><Cree sro={wordform} /></td>
+        </tr>
+        {/each}
+
       </tbody>
     </table>
 
