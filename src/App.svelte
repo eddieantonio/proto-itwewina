@@ -6,6 +6,8 @@
   import DefaultScreen from './screens/Default.svelte';
   import HomeScreen from './screens/Home.svelte';
   import SearchForNiska from './screens/SearchForNiska.svelte';
+  import SeeAlgonquianist from './screens/SeeAlgonquianist.svelte';
+  import SeeEmoji from './screens/SeeEmoji.svelte';
 
   import {orthography} from './components/Cree/store';
   import {SRO_MACRON, SRO_CIRCUMFLEX, SYLLABICS} from './components/Cree';
@@ -14,6 +16,8 @@
     'default': DefaultScreen,
     'home': HomeScreen,
     'niska': SearchForNiska,
+    'emoji': SeeEmoji,
+    'alg': SeeAlgonquianist,
   };
 
   const orthographies = {
